@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>XRoadLib</AssemblyName>
+    <AssemblyTitle>XRoadLib</AssemblyTitle>
+    <TargetFrameworks>net452;netstandard2.0</TargetFrameworks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Description>A .NET library for implementing service interfaces of X-Road providers using Code-First Development approach.</Description>
+    <PackageId>XRoadLib</PackageId>
+    <PackageTags>x-tee;x-road;xtee;xroad</PackageTags>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
+    <PackageReference Include="System.Reflection.Emit.Lightweight" Version="4.3.0" />
+  </ItemGroup>
+</Project>

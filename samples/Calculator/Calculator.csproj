@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <AssemblyName>Calculator</AssemblyName>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Contract\**" />
+    <Content Remove="Contract\**" />
+    <EmbeddedResource Remove="Contract\**" />
+    <None Remove="Contract\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="DataItem.cs" />
+    <Compile Remove="GenericMethodBuilder.cs" />
+    <Compile Remove="GenericTypeBuilder.cs" />
+    <Compile Remove="MyTypeFactory.cs" />
+    <Compile Remove="TypeFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contract\AddRequest.cs" />
+    <Compile Include="Contract\CalculationRequest.cs" />
+    <Compile Include="Contract\ICalculate.cs" />
+    <Compile Include="Contract\ISome.cs" />
+    <Compile Include="Contract\ISumOfIntegers.cs" />
+    <Compile Include="Contract\Operation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\XRoadLib.Extensions.AspNetCore\XRoadLib.Extensions.AspNetCore.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+  </ItemGroup>
+  <ItemGroup>
+  <PackageReference Include="System.Reflection.Emit" Version="4.3.0" />
+</ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reflection\" />
+  </ItemGroup>
+</Project>

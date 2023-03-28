@@ -1,0 +1,20 @@
+﻿1>------ Начало публикации: проект: SourcesAPI, Конфигурация: Debug Any CPU ------
+1>Выполнено преобразование Web.config с помощью C:\Users\Aziz.Nortozhiev\Desktop\Отчетность\xRoadLib\xRoadLib\SourcesAPI\Web.Debug.config в obj\Debug\TransformWebConfig\transformed\Web.config.
+1>Автоматическая строка подключения (ConnectionString) Areas\HelpPage\Views\Web.config преобразована в obj\Debug\CSAutoParameterize\transformed\Areas\HelpPage\Views\Web.config.
+1>Автоматическая строка подключения (ConnectionString) Views\Web.config преобразована в obj\Debug\CSAutoParameterize\transformed\Views\Web.config.
+1>Автоматическая строка подключения (ConnectionString) obj\Debug\TransformWebConfig\transformed\Web.config преобразована в obj\Debug\CSAutoParameterize\transformed\Web.config.
+1>Все файлы копируются в следующий временный каталог для упаковки и публикации:
+1>obj\Debug\Package\PackageTmp.
+1>Выполняется упаковка в E:\deploy\SourcesAPI.zip.
+1>Обновляется файл (C:\Users\Aziz.Nortozhiev\Desktop\Отчетность\xRoadLib\xRoadLib\SourcesAPI\obj\Debug\Package\PackageTmp\bin\SourcesAPI.dll).
+1>Обновляется файл (C:\Users\Aziz.Nortozhiev\Desktop\Отчетность\xRoadLib\xRoadLib\SourcesAPI\obj\Debug\Package\PackageTmp\bin\SourcesAPI.pdb).
+1>Пакет "SourcesAPI.zip" успешно создан в виде отдельного файла в следующем расположении:
+1>file:///E:/deploy
+1>Чтобы получить указания по развертыванию веб-пакета, перейдите по следующей ссылке:
+1>https://go.microsoft.com/fwlink/?LinkId=124618
+1>Образец сценария для развертывания этого пакета формируется в следующем расположении:
+1>E:\deploy\SourcesAPI.deploy.cmd
+1>Для этого образца параметры развертывания можно изменить, внеся изменения в следующий файл: 
+1>E:\deploy\SourcesAPI.SetParameters.xml
+========== Сборка: успешно: 0, с ошибками: 0, без изменений: 1, пропущено: 0 ==========
+========== Публикация: успешно: 1, с ошибками: 0, пропущено: 0 ==========

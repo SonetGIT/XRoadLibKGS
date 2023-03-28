@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>XRoadLib.Extensions.AspNet</AssemblyName>
+    <AssemblyTitle>XRoadLib.Extensions.AspNet</AssemblyTitle>
+    <TargetFrameworks>net452</TargetFrameworks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Description>XRoadLib extension to use X-Road messages on classical ASP.NET platform</Description>
+    <PackageId>XRoadLib.Extensions.AspNet</PackageId>
+    <PackageTags>x-tee;x-road;xtee;xroad;asp.net</PackageTags>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XRoadLib\XRoadLib.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
+</Project>

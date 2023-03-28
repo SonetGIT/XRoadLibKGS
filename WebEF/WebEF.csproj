@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>aspnet-WebEF-0F8F5A68-64AD-423E-931A-F03F76056172</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Contracts\RequestTypes\**" />
+    <Content Remove="Contracts\RequestTypes\**" />
+    <EmbeddedResource Remove="Contracts\RequestTypes\**" />
+    <None Remove="Contracts\RequestTypes\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Contracts\AddRequest.cs" />
+    <Compile Remove="Contracts\CalculationRequest.cs" />
+    <Compile Remove="Contracts\ICalculate.cs" />
+    <Compile Remove="Contracts\ISome.cs" />
+    <Compile Remove="Contracts\ISumOfIntegers.cs" />
+    <Compile Remove="Contracts\Operation.cs" />
+    <Compile Remove="Services\CalculateWebService.cs" />
+    <Compile Remove="Services\SomeWebService.cs" />
+    <Compile Remove="Services\SumOfIntegersWebService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Contracts\RequestTypes\ChildRequest.cs" />
+    <Compile Include="Contracts\RequestTypes\PINRequest.cs" />
+    <Compile Include="Contracts\RequestTypes\SaveNotPaymentF20Request.cs" />
+    <Compile Include="Contracts\RequestTypes\SetPaymentInfoRequest.cs" />
+    <Compile Include="Contracts\RequestTypes\SavePaymentF10Request.cs" />
+    <Compile Include="Contracts\RequestTypes\YearMonthRequest.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.5" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\src\XRoadLib.Extensions.AspNetCore\XRoadLib.Extensions.AspNetCore.csproj" />
+    <ProjectReference Include="..\src\XRoadLib\XRoadLib.csproj" />
+  </ItemGroup>
+
+</Project>

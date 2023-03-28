@@ -1,0 +1,2924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Intersoft.CISSA.DataAccessLayer.Model.Data" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="cissaEntities" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+    <EntitySet Name="Blob_Attributes" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Blob_Attribute" />
+    <EntitySet Name="Boolean_Attributes" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Boolean_Attribute" />
+    <EntitySet Name="Currency_Attributes" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Currency_Attribute" />
+    <EntitySet Name="Data_Types" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Data_Type" />
+    <EntitySet Name="Date_Time_Attributes" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Date_Time_Attribute" />
+    <EntitySet Name="Document_Attributes" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Attribute" />
+    <EntitySet Name="Document_States" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_State" />
+    <EntitySet Name="DocumentActivityTypes" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.DocumentActivityType" />
+    <EntitySet Name="DocumentList_Attributes" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.DocumentList_Attribute" />
+    <EntitySet Name="Documents" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Document" />
+    <EntitySet Name="Enum_Attributes" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Enum_Attribute" />
+    <EntitySet Name="Float_Attributes" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Float_Attribute" />
+    <EntitySet Name="Image_Attributes" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Image_Attribute" />
+    <EntitySet Name="Int_Attributes" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Int_Attribute" />
+    <EntitySet Name="Layout_Types" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Layout_Type" />
+    <EntitySet Name="Object_Defs" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def" />
+    <EntitySet Name="Org_Unit_Types" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Org_Unit_Type" />
+    <EntitySet Name="Permission_Defs" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Permission_Def" />
+    <EntitySet Name="Report_Section_Types" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Report_Section_Type" />
+    <EntitySet Name="Report_Summary_Types" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Report_Summary_Type" />
+    <EntitySet Name="Text_Attributes" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Text_Attribute" />
+    <EntitySet Name="Titles" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Title" />
+    <AssociationSet Name="R_108" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_108">
+      <End Role="Workflow_Activities" EntitySet="Object_Defs" />
+      <End Role="Activity_Links" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="R_109" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_109">
+      <End Role="Workflow_Activities" EntitySet="Object_Defs" />
+      <End Role="Activity_Links" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="R_120" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_120">
+      <End Role="User_Actions" EntitySet="Object_Defs" />
+      <End Role="Activity_Links" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Blob_Attributes_Attribute_Defs" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Blob_Attributes_Attribute_Defs">
+      <End Role="Attribute_Defs" EntitySet="Object_Defs" />
+      <End Role="Blob_Attributes" EntitySet="Blob_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Boolean_Attributes_Attribute_Defs" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Boolean_Attributes_Attribute_Defs">
+      <End Role="Attribute_Defs" EntitySet="Object_Defs" />
+      <End Role="Boolean_Attributes" EntitySet="Boolean_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DocumentControl_Attribute_Defs" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DocumentControl_Attribute_Defs">
+      <End Role="Attribute_Defs" EntitySet="Object_Defs" />
+      <End Role="DocumentControl" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DocumentList_Attributes_Attribute_Defs" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DocumentList_Attributes_Attribute_Defs">
+      <End Role="Attribute_Defs" EntitySet="Object_Defs" />
+      <End Role="DocumentList_Attributes" EntitySet="DocumentList_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DocumentListForms_Attribute_Defs" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DocumentListForms_Attribute_Defs">
+      <End Role="Attribute_Defs" EntitySet="Object_Defs" />
+      <End Role="DocumentList_Forms" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_Columns_Attribute_Defs" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Table_Columns_Attribute_Defs">
+      <End Role="Attribute_Defs" EntitySet="Object_Defs" />
+      <End Role="Table_Columns" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="R_11" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_11">
+      <End Role="Attribute_Defs" EntitySet="Object_Defs" />
+      <End Role="Int_Attributes" EntitySet="Int_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="R_14" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_14">
+      <End Role="Attribute_Defs" EntitySet="Object_Defs" />
+      <End Role="Float_Attributes" EntitySet="Float_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="R_16" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_16">
+      <End Role="Attribute_Defs" EntitySet="Object_Defs" />
+      <End Role="Text_Attributes" EntitySet="Text_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="R_18" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_18">
+      <End Role="Attribute_Defs" EntitySet="Object_Defs" />
+      <End Role="Currency_Attributes" EntitySet="Currency_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="R_20" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_20">
+      <End Role="Attribute_Defs" EntitySet="Object_Defs" />
+      <End Role="Date_Time_Attributes" EntitySet="Date_Time_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="R_22" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_22">
+      <End Role="Attribute_Defs" EntitySet="Object_Defs" />
+      <End Role="Enum_Attributes" EntitySet="Enum_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="R_39" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_39">
+      <End Role="Attribute_Defs" EntitySet="Object_Defs" />
+      <End Role="Editors" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="R_48" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_48">
+      <End Role="Attribute_Defs" EntitySet="Object_Defs" />
+      <End Role="Document_Attributes" EntitySet="Document_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="R_5" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_5">
+      <End Role="Data_Types" EntitySet="Data_Types" />
+      <End Role="Attribute_Defs" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="R_51" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_51">
+      <End Role="Attribute_Defs" EntitySet="Object_Defs" />
+      <End Role="Image_Attributes" EntitySet="Image_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="R_65" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_65">
+      <End Role="Attribute_Defs" EntitySet="Object_Defs" />
+      <End Role="Combo_Boxes" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="R_7" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_7">
+      <End Role="Document_Defs" EntitySet="Object_Defs" />
+      <End Role="Attribute_Defs" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="R_8" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_8">
+      <End Role="Enum_Defs" EntitySet="Object_Defs" />
+      <End Role="Attribute_Defs" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Blob_Attributes_Documents" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Blob_Attributes_Documents">
+      <End Role="Documents" EntitySet="Documents" />
+      <End Role="Blob_Attributes" EntitySet="Blob_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Blob_Attributes_Workers" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Blob_Attributes_Workers">
+      <End Role="Workers" EntitySet="Object_Defs" />
+      <End Role="Blob_Attributes" EntitySet="Blob_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Boolean_Attributes_Documents" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Boolean_Attributes_Documents">
+      <End Role="Documents" EntitySet="Documents" />
+      <End Role="Boolean_Attributes" EntitySet="Boolean_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Boolean_Attributes_Workers" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Boolean_Attributes_Workers">
+      <End Role="Workers" EntitySet="Object_Defs" />
+      <End Role="Boolean_Attributes" EntitySet="Boolean_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="R_121" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_121">
+      <End Role="Workflow_Processes" EntitySet="Object_Defs" />
+      <End Role="Buttons" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="R_123" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_123">
+      <End Role="User_Actions" EntitySet="Object_Defs" />
+      <End Role="Buttons" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Presentation_Activities_Controls" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Presentation_Activities_Controls">
+      <End Role="Controls" EntitySet="Object_Defs" />
+      <End Role="Presentation_Activities" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Currency_Attributes_Workers" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Currency_Attributes_Workers">
+      <End Role="Workers" EntitySet="Object_Defs" />
+      <End Role="Currency_Attributes" EntitySet="Currency_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="R_17" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_17">
+      <End Role="Documents" EntitySet="Documents" />
+      <End Role="Currency_Attributes" EntitySet="Currency_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Date_Time_Attributes_Workers" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Date_Time_Attributes_Workers">
+      <End Role="Workers" EntitySet="Object_Defs" />
+      <End Role="Date_Time_Attributes" EntitySet="Date_Time_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="R_19" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_19">
+      <End Role="Documents" EntitySet="Documents" />
+      <End Role="Date_Time_Attributes" EntitySet="Date_Time_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Document_Activities_DocumentActivityType" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_Activities_DocumentActivityType">
+      <End Role="DocumentActivityType" EntitySet="DocumentActivityTypes" />
+      <End Role="Document_Activities" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="R_80" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_80">
+      <End Role="Document_Defs" EntitySet="Object_Defs" />
+      <End Role="Document_Activities" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Document_Attributes_Workers" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_Attributes_Workers">
+      <End Role="Workers" EntitySet="Object_Defs" />
+      <End Role="Document_Attributes" EntitySet="Document_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="R_47" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_47">
+      <End Role="Documents" EntitySet="Documents" />
+      <End Role="Document_Attributes" EntitySet="Document_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="R_49" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_49">
+      <End Role="Documents" EntitySet="Documents" />
+      <End Role="Document_Attributes" EntitySet="Document_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_Forms_Document_Defs" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Table_Forms_Document_Defs">
+      <End Role="Document_Defs" EntitySet="Object_Defs" />
+      <End Role="Table_Forms" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="R_3" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_3">
+      <End Role="Document_Defs" EntitySet="Object_Defs" />
+      <End Role="Document_Defs1" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="R_38" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_38">
+      <End Role="Document_Defs" EntitySet="Object_Defs" />
+      <End Role="Forms" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="R_44" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_44">
+      <End Role="Document_Defs" EntitySet="Object_Defs" />
+      <End Role="Grids" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="R_46" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_46">
+      <End Role="Document_Defs" EntitySet="Object_Defs" />
+      <End Role="Reports" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="R_9" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_9">
+      <End Role="Document_Defs" EntitySet="Object_Defs" />
+      <End Role="Documents" EntitySet="Documents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Document_States_Workers" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_States_Workers">
+      <End Role="Workers" EntitySet="Object_Defs" />
+      <End Role="Document_States" EntitySet="Document_States" />
+    </AssociationSet>
+    <AssociationSet Name="R_88" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_88">
+      <End Role="Documents" EntitySet="Documents" />
+      <End Role="Document_States" EntitySet="Document_States" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DocumentControl_Forms" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DocumentControl_Forms">
+      <End Role="Forms" EntitySet="Object_Defs" />
+      <End Role="DocumentControl" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DocumentList_Attributes_Documents" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DocumentList_Attributes_Documents">
+      <End Role="Documents" EntitySet="Documents" />
+      <End Role="DocumentList_Attributes" EntitySet="DocumentList_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DocumentList_Attributes_Workers" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DocumentList_Attributes_Workers">
+      <End Role="Workers" EntitySet="Object_Defs" />
+      <End Role="DocumentList_Attributes" EntitySet="DocumentList_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Documents_Workers" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Documents_Workers">
+      <End Role="Workers" EntitySet="Object_Defs" />
+      <End Role="Documents" EntitySet="Documents" />
+    </AssociationSet>
+    <AssociationSet Name="R_10" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_10">
+      <End Role="Documents" EntitySet="Documents" />
+      <End Role="Int_Attributes" EntitySet="Int_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="R_13" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_13">
+      <End Role="Documents" EntitySet="Documents" />
+      <End Role="Float_Attributes" EntitySet="Float_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="R_15" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_15">
+      <End Role="Documents" EntitySet="Documents" />
+      <End Role="Text_Attributes" EntitySet="Text_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="R_21" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_21">
+      <End Role="Documents" EntitySet="Documents" />
+      <End Role="Enum_Attributes" EntitySet="Enum_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="R_50" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_50">
+      <End Role="Documents" EntitySet="Documents" />
+      <End Role="Image_Attributes" EntitySet="Image_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DynamicDocumentList_Forms" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DynamicDocumentList_Forms">
+      <End Role="Forms" EntitySet="Object_Defs" />
+      <End Role="DynamicDocumentList" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DynamicDocumentList_Scripts" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DynamicDocumentList_Scripts">
+      <End Role="Scripts" EntitySet="Object_Defs" />
+      <End Role="DynamicDocumentList" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Enum_Attributes_Workers" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Enum_Attributes_Workers">
+      <End Role="Workers" EntitySet="Object_Defs" />
+      <End Role="Enum_Attributes" EntitySet="Enum_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="R_23" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_23">
+      <End Role="Enum_Items" EntitySet="Object_Defs" />
+      <End Role="Enum_Attributes" EntitySet="Enum_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Radio_Items_Enum_Items" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Radio_Items_Enum_Items">
+      <End Role="Enum_Items" EntitySet="Object_Defs" />
+      <End Role="Radio_Items" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Float_Attributes_Workers" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Float_Attributes_Workers">
+      <End Role="Workers" EntitySet="Object_Defs" />
+      <End Role="Float_Attributes" EntitySet="Float_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Forms_Layout_Types" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Forms_Layout_Types">
+      <End Role="Layout_Types" EntitySet="Layout_Types" />
+      <End Role="Forms" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_Forms_Filter_Forms" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Table_Forms_Filter_Forms">
+      <End Role="Forms" EntitySet="Object_Defs" />
+      <End Role="Table_Forms" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_Forms_Forms" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Table_Forms_Forms">
+      <End Role="Forms" EntitySet="Object_Defs" />
+      <End Role="Table_Forms" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Image_Attributes_Workers" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Image_Attributes_Workers">
+      <End Role="Workers" EntitySet="Object_Defs" />
+      <End Role="Image_Attributes" EntitySet="Image_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Int_Attributes_Workers" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Int_Attributes_Workers">
+      <End Role="Workers" EntitySet="Object_Defs" />
+      <End Role="Int_Attributes" EntitySet="Int_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Panels_Layout_Types" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Panels_Layout_Types">
+      <End Role="Layout_Types" EntitySet="Layout_Types" />
+      <End Role="Panels" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Menus_Table_Forms" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Menus_Table_Forms">
+      <End Role="Table_Forms" EntitySet="Object_Defs" />
+      <End Role="Menus" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Menus_Workflow_Processes" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Menus_Workflow_Processes">
+      <End Role="Workflow_Processes" EntitySet="Object_Defs" />
+      <End Role="Menus" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Permission_Defs_Object_Defs" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Permission_Defs_Object_Defs">
+      <End Role="Object_Defs" EntitySet="Object_Defs" />
+      <End Role="Permission_Defs" EntitySet="Permission_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="R_1" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_1">
+      <End Role="Object_Defs" EntitySet="Object_Defs" />
+      <End Role="Object_Defs1" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Workers_Org_Positions" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Workers_Org_Positions">
+      <End Role="Org_Positions" EntitySet="Object_Defs" />
+      <End Role="Workers" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="R_28" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_28">
+      <End Role="Titles" EntitySet="Titles" />
+      <End Role="Org_Positions" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Org_Units_Org_Unit_Types" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Org_Units_Org_Unit_Types">
+      <End Role="Org_Unit_Types" EntitySet="Org_Unit_Types" />
+      <End Role="Org_Units" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Permission_Defs_Permissions" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Permission_Defs_Permissions">
+      <End Role="Permissions" EntitySet="Object_Defs" />
+      <End Role="Permission_Defs" EntitySet="Permission_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="R_125" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.R_125">
+      <End Role="Workflow_Processes" EntitySet="Object_Defs" />
+      <End Role="Process_Call_Activities" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Report_Editors_Summary_Types" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Report_Editors_Summary_Types">
+      <End Role="Report_Summary_Types" EntitySet="Report_Summary_Types" />
+      <End Role="Report_Editors" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Report_Sections_Section_Types" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Report_Sections_Section_Types">
+      <End Role="Report_Section_Types" EntitySet="Report_Section_Types" />
+      <End Role="Report_Sections" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Text_Attributes_Workers" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Text_Attributes_Workers">
+      <End Role="Workers" EntitySet="Object_Defs" />
+      <End Role="Text_Attributes" EntitySet="Text_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="Org_Positions_Roles" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.Org_Positions_Roles">
+      <End Role="Org_Position" EntitySet="Object_Defs" />
+      <End Role="Role" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="Org_Units_Roles" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.Org_Units_Roles">
+      <End Role="Org_Unit" EntitySet="Object_Defs" />
+      <End Role="Role" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="Worker_Roles" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.Worker_Roles">
+      <End Role="Role" EntitySet="Object_Defs" />
+      <End Role="Worker" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="OrgUnits_ObjectDefs" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.OrgUnits_ObjectDefs">
+      <End Role="Object_Def" EntitySet="Object_Defs" />
+      <End Role="Org_Unit" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="Role_Permissions" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.Role_Permissions">
+      <End Role="Permission" EntitySet="Object_Defs" />
+      <End Role="Role" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="Workflow_Def_Rules" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Def_Rules">
+      <End Role="Workflow_Def" EntitySet="Object_Defs" />
+      <End Role="Rule" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Organizations_Org_Units" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Organizations_Org_Units">
+      <End Role="Org_Unit" EntitySet="Object_Defs" />
+      <End Role="Organization" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Document_State_Activities_Document_State_Types1" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_State_Activities_Document_State_Types">
+      <End Role="Document_State_Type" EntitySet="Object_Defs" />
+      <End Role="Document_State_Activity" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Document_States_Document_State_Types1" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_States_Document_State_Types">
+      <End Role="Document_State_Type" EntitySet="Object_Defs" />
+      <End Role="Document_State" EntitySet="Document_States" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Menus_Document_State_Types1" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Menus_Document_State_Types">
+      <End Role="Document_State_Type" EntitySet="Object_Defs" />
+      <End Role="Menu" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DocumentList_Attributes_Documents1" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DocumentList_Attributes_Documents1">
+      <End Role="Document" EntitySet="Documents" />
+      <End Role="DocumentList_Attribute" EntitySet="DocumentList_Attributes" />
+    </AssociationSet>
+    <EntitySet Name="Object_Defs_View" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Defs_View" />
+    <EntitySet Name="Generators" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Generator" />
+    <EntitySet Name="Doc_State_Attributes" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Doc_State_Attribute" />
+    <EntitySet Name="Org_Attributes" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Org_Attribute" />
+    <AssociationSet Name="FK_Doc_State_Attributes_Attribute_Defs" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Doc_State_Attributes_Attribute_Defs">
+      <End Role="Attribute_Def" EntitySet="Object_Defs" />
+      <End Role="Doc_State_Attributes" EntitySet="Doc_State_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Org_Attributes_Attribute_Defs" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Org_Attributes_Attribute_Defs">
+      <End Role="Attribute_Def" EntitySet="Object_Defs" />
+      <End Role="Org_Attributes" EntitySet="Org_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Doc_State_Attributes_Document_State_Types" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Doc_State_Attributes_Document_State_Types">
+      <End Role="Document_State_Type" EntitySet="Object_Defs" />
+      <End Role="Doc_State_Attributes" EntitySet="Doc_State_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Doc_State_Attributes_Documents" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Doc_State_Attributes_Documents">
+      <End Role="Document" EntitySet="Documents" />
+      <End Role="Doc_State_Attributes" EntitySet="Doc_State_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Org_Attributes_Documents" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Org_Attributes_Documents">
+      <End Role="Document" EntitySet="Documents" />
+      <End Role="Org_Attributes" EntitySet="Org_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Org_Attributes_Organizations" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Org_Attributes_Organizations">
+      <End Role="Organization" EntitySet="Object_Defs" />
+      <End Role="Org_Attributes" EntitySet="Org_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Doc_State_Attributes_Workers" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Doc_State_Attributes_Workers">
+      <End Role="Worker" EntitySet="Object_Defs" />
+      <End Role="Doc_State_Attribute" EntitySet="Doc_State_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Org_Attributes_Workers" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Org_Attributes_Workers">
+      <End Role="Worker" EntitySet="Object_Defs" />
+      <End Role="Org_Attributes" EntitySet="Org_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Documents_Organizations" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Documents_Organizations">
+      <End Role="Organization" EntitySet="Object_Defs" />
+      <End Role="Document" EntitySet="Documents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Finish_Activities_Controls" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Finish_Activities_Controls">
+      <End Role="Control" EntitySet="Object_Defs" />
+      <End Role="Finish_Activity" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Document_Defs_Create_Permissions" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_Defs_Create_Permissions">
+      <End Role="Permission" EntitySet="Object_Defs" />
+      <End Role="Document_Def" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Document_Defs_Delete_Permissions" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_Defs_Delete_Permissions">
+      <End Role="Permission" EntitySet="Object_Defs" />
+      <End Role="Document_Def" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Document_Defs_Select_Permissions" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_Defs_Select_Permissions">
+      <End Role="Permission" EntitySet="Object_Defs" />
+      <End Role="Document_Def" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Document_Defs_Update_Permissions" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_Defs_Update_Permissions">
+      <End Role="Permission" EntitySet="Object_Defs" />
+      <End Role="Document_Def" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_Forms_Add_New_Permissions" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Table_Forms_Add_New_Permissions">
+      <End Role="Permission" EntitySet="Object_Defs" />
+      <End Role="Table_Form" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_Forms_Open_Permissions" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Table_Forms_Open_Permissions">
+      <End Role="Permission" EntitySet="Object_Defs" />
+      <End Role="Table_Form" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DocumentList_Forms_Form_Attribute_Defs" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DocumentList_Forms_Form_Attribute_Defs">
+      <End Role="Attribute_Def" EntitySet="Object_Defs" />
+      <End Role="DocumentList_Form" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <EntitySet Name="Languages" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Language" />
+    <EntitySet Name="Object_Def_Translations" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def_Translation" />
+    <EntitySet Name="Role_Refs" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Role_Ref" />
+    <AssociationSet Name="FK_Document_Route_Transits_Source_Document_State_Types" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_Route_Transits_Source_Document_State_Types">
+      <End Role="Document_Def" EntitySet="Object_Defs" />
+      <End Role="Document_Route_Transits" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Document_Route_Transits_Target_Document_State_Types" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_Route_Transits_Target_Document_State_Types">
+      <End Role="Document_Def" EntitySet="Object_Defs" />
+      <End Role="Document_Route_Transits" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Document_Routes_Document_Defs" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_Routes_Document_Defs">
+      <End Role="Document_Def" EntitySet="Object_Defs" />
+      <End Role="Document_Routes" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Object_Def_Translations_Languages" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Object_Def_Translations_Languages">
+      <End Role="Language" EntitySet="Languages" />
+      <End Role="Object_Def_Translations" EntitySet="Object_Def_Translations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Object_Def_Translations_Object_Defs" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Object_Def_Translations_Object_Defs">
+      <End Role="Object_Def" EntitySet="Object_Defs" />
+      <End Role="Object_Def_Translations" EntitySet="Object_Def_Translations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Role_Refs_Object_Defs" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Role_Refs_Object_Defs">
+      <End Role="Object_Def" EntitySet="Object_Defs" />
+      <End Role="Role_Refs" EntitySet="Role_Refs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Role_Refs_Roles" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Role_Refs_Roles">
+      <End Role="Role" EntitySet="Object_Defs" />
+      <End Role="Role_Refs" EntitySet="Role_Refs" />
+    </AssociationSet>
+    <AssociationSet Name="Document_Visibilities" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Visibilities">
+      <End Role="Document" EntitySet="Documents" />
+      <End Role="Organization" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <EntitySet Name="Document_Contents" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Content" />
+    <AssociationSet Name="FK_Document_States_Prev_Document_State" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_States_Prev_Document_State">
+      <End Role="Document_State" EntitySet="Document_States" />
+      <End Role="Document_State1" EntitySet="Document_States" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Workers_Languages" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Workers_Languages">
+      <End Role="Language" EntitySet="Languages" />
+      <End Role="Worker" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Combo_Box_Detail_Attribute_Defs" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Combo_Box_Detail_Attribute_Defs">
+      <End Role="Attribute_Def" EntitySet="Object_Defs" />
+      <End Role="Combo_Box" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Attribute_Def_Org_Units" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Attribute_Def_Org_Units">
+      <End Role="Org_Unit" EntitySet="Object_Defs" />
+      <End Role="Attribute_Def" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <EntitySet Name="Object_Def_Attributes" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def_Attribute" />
+    <AssociationSet Name="FK_Object_Def_Attributes_Attribute_Defs" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Object_Def_Attributes_Attribute_Defs">
+      <End Role="Attribute_Def" EntitySet="Object_Defs" />
+      <End Role="Object_Def_Attributes" EntitySet="Object_Def_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Object_Def_Attributes_Documents" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Object_Def_Attributes_Documents">
+      <End Role="Document" EntitySet="Documents" />
+      <End Role="Object_Def_Attributes" EntitySet="Object_Def_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Object_Def_Attributes_Object_Defs" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Object_Def_Attributes_Object_Defs">
+      <End Role="Object_Def" EntitySet="Object_Defs" />
+      <End Role="Object_Def_Attributes" EntitySet="Object_Def_Attributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Object_Def_Attributes_Workers" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Object_Def_Attributes_Workers">
+      <End Role="Worker" EntitySet="Object_Defs" />
+      <End Role="Object_Def_Attributes" EntitySet="Object_Def_Attributes" />
+    </AssociationSet>
+    <EntitySet Name="Compare_Operations" EntityType="Intersoft.CISSA.DataAccessLayer.Model.Data.Compare_Operations" />
+    <AssociationSet Name="FK_Control_Compare_Operations" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Control_Compare_Operations">
+      <End Role="Compare_Operations" EntitySet="Compare_Operations" />
+      <End Role="Control" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gate_Call_Activity_Workflow_Gate_Refs" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Gate_Call_Activity_Workflow_Gate_Refs">
+      <End Role="Workflow_Gate_Ref" EntitySet="Object_Defs" />
+      <End Role="Gate_Call_Activity" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Editors_Workflow_Processes" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Editors_Workflow_Processes">
+      <End Role="Workflow_Process" EntitySet="Object_Defs" />
+      <End Role="Editor" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Workflow_Gate_Ref_Workflow_Defs" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Workflow_Gate_Ref_Workflow_Defs">
+      <End Role="Workflow_Def" EntitySet="Object_Defs" />
+      <End Role="Workflow_Gate_Ref" EntitySet="Object_Defs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Workflow_Gate_Workflow_Defs" Association="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Workflow_Gate_Workflow_Defs">
+      <End Role="Workflow_Def" EntitySet="Object_Defs" />
+      <End Role="Workflow_Gate" EntitySet="Object_Defs" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Activity_Link" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Def">
+    <Property Name="Source_Id" Type="Guid" />
+    <Property Name="Target_Id" Type="Guid" />
+    <Property Name="Condition" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="User_Action_Id" Type="Guid" />
+    <NavigationProperty Name="Workflow_Activities" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_108" FromRole="Activity_Links" ToRole="Workflow_Activities" />
+    <NavigationProperty Name="Workflow_Activities1" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_109" FromRole="Activity_Links" ToRole="Workflow_Activities" />
+    <NavigationProperty Name="User_Actions" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_120" FromRole="Activity_Links" ToRole="User_Actions" />
+    <Property Type="Boolean" Name="Is_Exception_Handler" />
+  </EntityType>
+  <EntityType Name="Attribute_Def" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def">
+    <Property Name="Enum_Id" Type="Guid" />
+    <Property Name="Document_Id" Type="Guid" />
+    <Property Name="Type_Id" Type="Int16" />
+    <Property Name="Is_Not_Null" Type="Boolean" />
+    <Property Name="Is_Unique" Type="Boolean" />
+    <Property Name="Max_Value" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Min_Value" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Max_Length" Type="Int32" />
+    <Property Name="Default_Value" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="CalculateScript" Type="String" MaxLength="8000" Unicode="false" FixedLength="false" />
+    <Property Name="BlobMaxHeight" Type="Int32" />
+    <Property Name="BlobIsImage" Type="Boolean" />
+    <Property Name="BlobMaxWidth" Type="Int32" />
+    <Property Name="BlobMaxSizeBytes" Type="Int32" />
+    <NavigationProperty Name="Blob_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Blob_Attributes_Attribute_Defs" FromRole="Attribute_Defs" ToRole="Blob_Attributes" />
+    <NavigationProperty Name="Boolean_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Boolean_Attributes_Attribute_Defs" FromRole="Attribute_Defs" ToRole="Boolean_Attributes" />
+    <NavigationProperty Name="DocumentControls" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DocumentControl_Attribute_Defs" FromRole="Attribute_Defs" ToRole="DocumentControl" />
+    <NavigationProperty Name="DocumentList_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DocumentList_Attributes_Attribute_Defs" FromRole="Attribute_Defs" ToRole="DocumentList_Attributes" />
+    <NavigationProperty Name="DocumentList_Forms" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DocumentListForms_Attribute_Defs" FromRole="Attribute_Defs" ToRole="DocumentList_Forms" />
+    <NavigationProperty Name="Table_Columns" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Table_Columns_Attribute_Defs" FromRole="Attribute_Defs" ToRole="Table_Columns" />
+    <NavigationProperty Name="Int_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_11" FromRole="Attribute_Defs" ToRole="Int_Attributes" />
+    <NavigationProperty Name="Float_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_14" FromRole="Attribute_Defs" ToRole="Float_Attributes" />
+    <NavigationProperty Name="Text_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_16" FromRole="Attribute_Defs" ToRole="Text_Attributes" />
+    <NavigationProperty Name="Currency_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_18" FromRole="Attribute_Defs" ToRole="Currency_Attributes" />
+    <NavigationProperty Name="Date_Time_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_20" FromRole="Attribute_Defs" ToRole="Date_Time_Attributes" />
+    <NavigationProperty Name="Enum_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_22" FromRole="Attribute_Defs" ToRole="Enum_Attributes" />
+    <NavigationProperty Name="Editors" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_39" FromRole="Attribute_Defs" ToRole="Editors" />
+    <NavigationProperty Name="Document_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_48" FromRole="Attribute_Defs" ToRole="Document_Attributes" />
+    <NavigationProperty Name="Data_Types" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_5" FromRole="Attribute_Defs" ToRole="Data_Types" />
+    <NavigationProperty Name="Image_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_51" FromRole="Attribute_Defs" ToRole="Image_Attributes" />
+    <NavigationProperty Name="Combo_Boxes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_65" FromRole="Attribute_Defs" ToRole="Combo_Boxes" />
+    <NavigationProperty Name="Document_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_7" FromRole="Attribute_Defs" ToRole="Document_Defs" />
+    <NavigationProperty Name="Enum_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_8" FromRole="Attribute_Defs" ToRole="Enum_Defs" />
+    <NavigationProperty Name="Doc_State_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Doc_State_Attributes_Attribute_Defs" FromRole="Attribute_Def" ToRole="Doc_State_Attributes" />
+    <NavigationProperty Name="Org_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Org_Attributes_Attribute_Defs" FromRole="Attribute_Def" ToRole="Org_Attributes" />
+    <NavigationProperty Name="DocumentList_Forms_1" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DocumentList_Forms_Form_Attribute_Defs" FromRole="Attribute_Def" ToRole="DocumentList_Form" />
+    <NavigationProperty Name="Combo_Boxes_1" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Combo_Box_Detail_Attribute_Defs" FromRole="Attribute_Def" ToRole="Combo_Box" />
+    <Property Type="Guid" Name="Org_Type_Id" />
+    <NavigationProperty Name="Org_Units" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Attribute_Def_Org_Units" FromRole="Attribute_Def" ToRole="Org_Unit" />
+    <NavigationProperty Name="Object_Def_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Object_Def_Attributes_Attribute_Defs" FromRole="Attribute_Def" ToRole="Object_Def_Attributes" />
+  </EntityType>
+  <EntityType Name="Blob_Attribute">
+    <Key>
+      <PropertyRef Name="Document_Id" />
+      <PropertyRef Name="Def_Id" />
+      <PropertyRef Name="Created" />
+    </Key>
+    <Property Name="Document_Id" Type="Guid" Nullable="false" />
+    <Property Name="Def_Id" Type="Guid" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Value" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="Expired" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="FileExtention" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FileName" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Attribute_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Blob_Attributes_Attribute_Defs" FromRole="Blob_Attributes" ToRole="Attribute_Defs" />
+    <NavigationProperty Name="Document" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Blob_Attributes_Documents" FromRole="Blob_Attributes" ToRole="Documents" />
+    <NavigationProperty Name="Worker" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Blob_Attributes_Workers" FromRole="Blob_Attributes" ToRole="Workers" />
+  </EntityType>
+  <EntityType Name="Boolean_Attribute">
+    <Key>
+      <PropertyRef Name="Document_Id" />
+      <PropertyRef Name="Def_Id" />
+      <PropertyRef Name="Created" />
+    </Key>
+    <Property Name="Document_Id" Type="Guid" Nullable="false" />
+    <Property Name="Def_Id" Type="Guid" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Value" Type="Boolean" Nullable="false" />
+    <Property Name="Expired" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Attribute_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Boolean_Attributes_Attribute_Defs" FromRole="Boolean_Attributes" ToRole="Attribute_Defs" />
+    <NavigationProperty Name="Document" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Boolean_Attributes_Documents" FromRole="Boolean_Attributes" ToRole="Documents" />
+    <NavigationProperty Name="Worker" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Boolean_Attributes_Workers" FromRole="Boolean_Attributes" ToRole="Workers" />
+  </EntityType>
+  <EntityType Name="Button" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Control">
+    <Property Name="Action_Id" Type="Guid" />
+    <Property Name="Action_Type" Type="Byte" />
+    <Property Name="Button_Type" Type="Byte" />
+    <Property Name="User_Action_Id" Type="Guid" />
+    <Property Name="Process_Id" Type="Guid" />
+    <NavigationProperty Name="Workflow_Processes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_121" FromRole="Buttons" ToRole="Workflow_Processes" />
+    <NavigationProperty Name="User_Actions" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_123" FromRole="Buttons" ToRole="User_Actions" />
+  </EntityType>
+  <EntityType Name="Combo_Box" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Control">
+    <Property Name="Attribute_Id" Type="Guid" />
+    <Property Name="Is_Radio" Type="Boolean" />
+    <Property Name="Rows" Type="Byte" />
+    <NavigationProperty Name="Attribute_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_65" FromRole="Combo_Boxes" ToRole="Attribute_Defs" />
+    <Property Type="String" Name="Attribute_Name" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="Guid" Name="Detail_Attribute_Id" />
+    <Property Type="String" Name="Detail_Attribute_Name" MaxLength="250" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Detail_Attribute_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Combo_Box_Detail_Attribute_Defs" FromRole="Combo_Box" ToRole="Attribute_Def" />
+  </EntityType>
+  <EntityType Name="Control" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def">
+    <Property Name="Title" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="Style" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="VisibleInListView" Type="Boolean" />
+    <NavigationProperty Name="Presentation_Activities" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Presentation_Activities_Controls" FromRole="Controls" ToRole="Presentation_Activities" />
+    <Property Type="Boolean" Name="Invisible" />
+    <Property Type="Boolean" Name="Read_Only" />
+    <NavigationProperty Name="Finish_Activities" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Finish_Activities_Controls" FromRole="Control" ToRole="Finish_Activity" />
+    <Property Type="Byte" Name="Sort_Type" />
+    <Property Type="Boolean" Name="Not_Null" />
+    <Property Type="Int16" Name="Compare_Operation" />
+    <NavigationProperty Name="Compare_Operations" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Control_Compare_Operations" FromRole="Control" ToRole="Compare_Operations" />
+  </EntityType>
+  <EntityType Name="Currency_Attribute">
+    <Key>
+      <PropertyRef Name="Document_Id" />
+      <PropertyRef Name="Def_Id" />
+      <PropertyRef Name="Created" />
+    </Key>
+    <Property Name="Document_Id" Type="Guid" Nullable="false" />
+    <Property Name="Def_Id" Type="Guid" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Value" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Expired" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Attribute_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_18" FromRole="Currency_Attributes" ToRole="Attribute_Defs" />
+    <NavigationProperty Name="Worker" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Currency_Attributes_Workers" FromRole="Currency_Attributes" ToRole="Workers" />
+    <NavigationProperty Name="Document" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_17" FromRole="Currency_Attributes" ToRole="Documents" />
+  </EntityType>
+  <EntityType Name="Data_Type">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int16" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Attribute_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_5" FromRole="Data_Types" ToRole="Attribute_Defs" />
+  </EntityType>
+  <EntityType Name="Date_Time_Attribute">
+    <Key>
+      <PropertyRef Name="Document_Id" />
+      <PropertyRef Name="Def_Id" />
+      <PropertyRef Name="Created" />
+    </Key>
+    <Property Name="Document_Id" Type="Guid" Nullable="false" />
+    <Property Name="Def_Id" Type="Guid" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Value" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Expired" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Attribute_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_20" FromRole="Date_Time_Attributes" ToRole="Attribute_Defs" />
+    <NavigationProperty Name="Worker" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Date_Time_Attributes_Workers" FromRole="Date_Time_Attributes" ToRole="Workers" />
+    <NavigationProperty Name="Document" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_19" FromRole="Date_Time_Attributes" ToRole="Documents" />
+  </EntityType>
+  <EntityType Name="Document_Activity" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Activity">
+    <Property Name="Document_Id" Type="Guid" />
+    <Property Name="DocActivityTypeId" Type="Int32" />
+    <NavigationProperty Name="DocumentActivityType" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_Activities_DocumentActivityType" FromRole="Document_Activities" ToRole="DocumentActivityType" />
+    <NavigationProperty Name="Document_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_80" FromRole="Document_Activities" ToRole="Document_Defs" />
+  </EntityType>
+  <EntityType Name="Document_Attribute">
+    <Key>
+      <PropertyRef Name="Document_Id" />
+      <PropertyRef Name="Def_Id" />
+      <PropertyRef Name="Created" />
+    </Key>
+    <Property Name="Document_Id" Type="Guid" Nullable="false" />
+    <Property Name="Def_Id" Type="Guid" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Value" Type="Guid" Nullable="false" />
+    <Property Name="Expired" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Attribute_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_48" FromRole="Document_Attributes" ToRole="Attribute_Defs" />
+    <NavigationProperty Name="Worker" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_Attributes_Workers" FromRole="Document_Attributes" ToRole="Workers" />
+    <NavigationProperty Name="Document" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_47" FromRole="Document_Attributes" ToRole="Documents" />
+    <NavigationProperty Name="DocumentValue" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_49" FromRole="Document_Attributes" ToRole="Documents" />
+  </EntityType>
+  <EntityType Name="Document_Def" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def">
+    <Property Name="Ancestor_Id" Type="Guid" />
+    <Property Name="WithHistory" Type="Boolean" Nullable="false" />
+    <Property Name="Is_Inline" Type="Boolean" />
+    <NavigationProperty Name="Attribute_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_7" FromRole="Document_Defs" ToRole="Attribute_Defs" />
+    <NavigationProperty Name="Document_Activities" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_80" FromRole="Document_Defs" ToRole="Document_Activities" />
+    <NavigationProperty Name="Table_Forms" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Table_Forms_Document_Defs" FromRole="Document_Defs" ToRole="Table_Forms" />
+    <NavigationProperty Name="Document_Defs1" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_3" FromRole="Document_Defs" ToRole="Document_Defs1" />
+    <NavigationProperty Name="Document_Defs2" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_3" FromRole="Document_Defs1" ToRole="Document_Defs" />
+    <NavigationProperty Name="Forms" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_38" FromRole="Document_Defs" ToRole="Forms" />
+    <NavigationProperty Name="Grids" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_44" FromRole="Document_Defs" ToRole="Grids" />
+    <NavigationProperty Name="Reports" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_46" FromRole="Document_Defs" ToRole="Reports" />
+    <NavigationProperty Name="Documents" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_9" FromRole="Document_Defs" ToRole="Documents" />
+    <Property Type="Boolean" Name="Is_Public" />
+    <Property Type="Guid" Name="Update_Permission_Id" />
+    <Property Type="Guid" Name="Delete_Permission_Id" />
+    <Property Type="Guid" Name="Select_Permission_Id" />
+    <Property Type="Guid" Name="Create_Permission_Id" />
+    <Property Type="String" Name="Def_Data" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Permission" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_Defs_Create_Permissions" FromRole="Document_Def" ToRole="Permission" />
+    <NavigationProperty Name="Permission1" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_Defs_Delete_Permissions" FromRole="Document_Def" ToRole="Permission" />
+    <NavigationProperty Name="Permission2" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_Defs_Select_Permissions" FromRole="Document_Def" ToRole="Permission" />
+    <NavigationProperty Name="Permission3" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_Defs_Update_Permissions" FromRole="Document_Def" ToRole="Permission" />
+    <NavigationProperty Name="Document_Route_Transits" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_Route_Transits_Source_Document_State_Types" FromRole="Document_Def" ToRole="Document_Route_Transits" />
+    <NavigationProperty Name="Document_Route_Transits1" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_Route_Transits_Target_Document_State_Types" FromRole="Document_Def" ToRole="Document_Route_Transits" />
+    <NavigationProperty Name="Document_Routes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_Routes_Document_Defs" FromRole="Document_Def" ToRole="Document_Routes" />
+  </EntityType>
+  <EntityType Name="Document_State_Activity" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Activity">
+    <Property Name="State_Name" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Type="Guid" Name="State_Type_Id" />
+    <NavigationProperty Name="Document_State_Types" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_State_Activities_Document_State_Types" FromRole="Document_State_Activity" ToRole="Document_State_Type" />
+  </EntityType>
+  <EntityType Name="Document_State">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Document_Id" Type="Guid" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Worker_Id" Type="Guid" Nullable="false" />
+    <Property Name="Expired" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Worker" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_States_Workers" FromRole="Document_States" ToRole="Workers" />
+    <NavigationProperty Name="Document" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_88" FromRole="Document_States" ToRole="Documents" />
+    <Property Type="Guid" Name="State_Type_Id" Nullable="false" />
+    <NavigationProperty Name="Document_State_Types" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_States_Document_State_Types" FromRole="Document_State" ToRole="Document_State_Type" />
+    <Property Type="Guid" Name="Prev_Document_State_Id" />
+    <NavigationProperty Name="Document_States1" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_States_Prev_Document_State" FromRole="Document_State" ToRole="Document_State1" />
+    <NavigationProperty Name="Document_States2" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_States_Prev_Document_State" FromRole="Document_State1" ToRole="Document_State" />
+  </EntityType>
+  <EntityType Name="DocumentActivityType">
+    <Key>
+      <PropertyRef Name="DocActivityTypeId" />
+    </Key>
+    <Property Name="DocActivityTypeId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Document_Activities" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_Activities_DocumentActivityType" FromRole="DocumentActivityType" ToRole="Document_Activities" />
+  </EntityType>
+  <EntityType Name="DocumentControl" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Control">
+    <Property Name="Attribute_Id" Type="Guid" />
+    <Property Name="Form_Id" Type="Guid" />
+    <NavigationProperty Name="Attribute_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DocumentControl_Attribute_Defs" FromRole="DocumentControl" ToRole="Attribute_Defs" />
+    <NavigationProperty Name="Form" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DocumentControl_Forms" FromRole="DocumentControl" ToRole="Forms" />
+    <Property Type="String" Name="Attribute_Name" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Hidden_Id" Type="Int16" />
+    <Property Name="Layout_Id" Type="Int16" />
+  </EntityType>
+  <EntityType Name="DocumentList_Attribute">
+    <Key>
+      <PropertyRef Name="Document_Id" />
+      <PropertyRef Name="Def_Id" />
+      <PropertyRef Name="Value" />
+      <PropertyRef Name="Created" />
+    </Key>
+    <Property Name="Document_Id" Type="Guid" Nullable="false" />
+    <Property Name="Def_Id" Type="Guid" Nullable="false" />
+    <Property Name="Value" Type="Guid" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Expired" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Attribute_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DocumentList_Attributes_Attribute_Defs" FromRole="DocumentList_Attributes" ToRole="Attribute_Defs" />
+    <NavigationProperty Name="Document" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DocumentList_Attributes_Documents" FromRole="DocumentList_Attributes" ToRole="Documents" />
+    <NavigationProperty Name="Worker" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DocumentList_Attributes_Workers" FromRole="DocumentList_Attributes" ToRole="Workers" />
+    <NavigationProperty Name="Document1" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DocumentList_Attributes_Documents1" FromRole="DocumentList_Attribute" ToRole="Document" />
+  </EntityType>
+  <EntityType Name="DocumentList_Form" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Control">
+    <Property Name="Attribute_Id" Type="Guid" />
+    <Property Name="Form_Id" Type="Guid" />
+    <NavigationProperty Name="Attribute_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DocumentListForms_Attribute_Defs" FromRole="DocumentList_Forms" ToRole="Attribute_Defs" />
+    <Property Type="Guid" Name="Form_Attribute_Id" />
+    <NavigationProperty Name="Attribute_Defs_1" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DocumentList_Forms_Form_Attribute_Defs" FromRole="DocumentList_Form" ToRole="Attribute_Def" />
+    <Property Type="String" Name="Attribute_Name" MaxLength="250" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Document">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Precision="3" />
+    <Property Name="Deleted" Type="Boolean" />
+    <Property Name="Def_Id" Type="Guid" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Blob_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Blob_Attributes_Documents" FromRole="Documents" ToRole="Blob_Attributes" />
+    <NavigationProperty Name="Boolean_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Boolean_Attributes_Documents" FromRole="Documents" ToRole="Boolean_Attributes" />
+    <NavigationProperty Name="Currency_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_17" FromRole="Documents" ToRole="Currency_Attributes" />
+    <NavigationProperty Name="Date_Time_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_19" FromRole="Documents" ToRole="Date_Time_Attributes" />
+    <NavigationProperty Name="Document_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_47" FromRole="Documents" ToRole="Document_Attributes" />
+    <NavigationProperty Name="Document_Attributes1" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_49" FromRole="Documents" ToRole="Document_Attributes" />
+    <NavigationProperty Name="Document_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_9" FromRole="Documents" ToRole="Document_Defs" />
+    <NavigationProperty Name="Document_States" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_88" FromRole="Documents" ToRole="Document_States" />
+    <NavigationProperty Name="DocumentList_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DocumentList_Attributes_Documents" FromRole="Documents" ToRole="DocumentList_Attributes" />
+    <NavigationProperty Name="Worker" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Documents_Workers" FromRole="Documents" ToRole="Workers" />
+    <NavigationProperty Name="Int_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_10" FromRole="Documents" ToRole="Int_Attributes" />
+    <NavigationProperty Name="Float_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_13" FromRole="Documents" ToRole="Float_Attributes" />
+    <NavigationProperty Name="Text_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_15" FromRole="Documents" ToRole="Text_Attributes" />
+    <NavigationProperty Name="Enum_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_21" FromRole="Documents" ToRole="Enum_Attributes" />
+    <NavigationProperty Name="Image_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_50" FromRole="Documents" ToRole="Image_Attributes" />
+    <NavigationProperty Name="DocumentList_Attributes1" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DocumentList_Attributes_Documents1" FromRole="Document" ToRole="DocumentList_Attribute" />
+    <Property Type="Guid" Name="Organization_Id" />
+    <Property Type="Guid" Name="Org_Position_Id" />
+    <NavigationProperty Name="Doc_State_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Doc_State_Attributes_Documents" FromRole="Document" ToRole="Doc_State_Attributes" />
+    <NavigationProperty Name="Org_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Org_Attributes_Documents" FromRole="Document" ToRole="Org_Attributes" />
+    <NavigationProperty Name="Organization" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Documents_Organizations" FromRole="Document" ToRole="Organization" />
+    <NavigationProperty Name="Organizations" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Visibilities" FromRole="Document" ToRole="Organization" />
+    <Property Type="DateTime" Name="Last_Modified" Precision="3" />
+    <NavigationProperty Name="Object_Def_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Object_Def_Attributes_Documents" FromRole="Document" ToRole="Object_Def_Attributes" />
+  </EntityType>
+  <EntityType Name="DynamicDocumentList" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Control">
+    <Property Name="Form_Id" Type="Guid" />
+    <Property Name="ScriptId" Type="Guid" />
+    <NavigationProperty Name="Form" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DynamicDocumentList_Forms" FromRole="DynamicDocumentList" ToRole="Forms" />
+    <NavigationProperty Name="Script" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DynamicDocumentList_Scripts" FromRole="DynamicDocumentList" ToRole="Scripts" />
+  </EntityType>
+  <EntityType Name="Editor" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Control">
+    <Property Name="Attribute_Id" Type="Guid" />
+    <Property Name="Rows" Type="Byte" />
+    <Property Name="Cols" Type="Byte" />
+    <NavigationProperty Name="Attribute_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_39" FromRole="Editors" ToRole="Attribute_Defs" />
+    <Property Type="String" Name="Attribute_Name" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Edit_Mask" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Format" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Process_Id" Type="Guid" />
+    <NavigationProperty Name="Workflow_Processes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Editors_Workflow_Processes" FromRole="Editor" ToRole="Workflow_Process" />
+  </EntityType>
+  <EntityType Name="Enum_Attribute">
+    <Key>
+      <PropertyRef Name="Document_Id" />
+      <PropertyRef Name="Def_Id" />
+      <PropertyRef Name="Created" />
+    </Key>
+    <Property Name="Document_Id" Type="Guid" Nullable="false" />
+    <Property Name="Def_Id" Type="Guid" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Value" Type="Guid" Nullable="false" />
+    <Property Name="Expired" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Attribute_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_22" FromRole="Enum_Attributes" ToRole="Attribute_Defs" />
+    <NavigationProperty Name="Document" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_21" FromRole="Enum_Attributes" ToRole="Documents" />
+    <NavigationProperty Name="Worker" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Enum_Attributes_Workers" FromRole="Enum_Attributes" ToRole="Workers" />
+    <NavigationProperty Name="Enum_Items" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_23" FromRole="Enum_Attributes" ToRole="Enum_Items" />
+  </EntityType>
+  <EntityType Name="Enum_Def" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def">
+    <NavigationProperty Name="Attribute_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_8" FromRole="Enum_Defs" ToRole="Attribute_Defs" />
+  </EntityType>
+  <EntityType Name="Enum_Item" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def">
+    <NavigationProperty Name="Enum_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_23" FromRole="Enum_Items" ToRole="Enum_Attributes" />
+    <NavigationProperty Name="Radio_Items" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Radio_Items_Enum_Items" FromRole="Enum_Items" ToRole="Radio_Items" />
+  </EntityType>
+  <EntityType Name="Finish_Activity" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Activity">
+    <Property Type="Guid" Name="Form_Id" />
+    <Property Type="String" Name="Message" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Control" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Finish_Activities_Controls" FromRole="Finish_Activity" ToRole="Control" />
+  </EntityType>
+  <EntityType Name="Float_Attribute">
+    <Key>
+      <PropertyRef Name="Document_Id" />
+      <PropertyRef Name="Def_Id" />
+      <PropertyRef Name="Created" />
+    </Key>
+    <Property Name="Document_Id" Type="Guid" Nullable="false" />
+    <Property Name="Def_Id" Type="Guid" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Value" Type="Double" Nullable="false" />
+    <Property Name="Expired" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Attribute_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_14" FromRole="Float_Attributes" ToRole="Attribute_Defs" />
+    <NavigationProperty Name="Document" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_13" FromRole="Float_Attributes" ToRole="Documents" />
+    <NavigationProperty Name="Worker" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Float_Attributes_Workers" FromRole="Float_Attributes" ToRole="Workers" />
+  </EntityType>
+  <EntityType Name="Folder_Def" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def" />
+  <EntityType Name="Form" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Control">
+    <Property Name="Document_Id" Type="Guid" />
+    <Property Name="Layout_Id" Type="Int16" />
+    <NavigationProperty Name="Document_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_38" FromRole="Forms" ToRole="Document_Defs" />
+    <NavigationProperty Name="DocumentControls" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DocumentControl_Forms" FromRole="Forms" ToRole="DocumentControl" />
+    <NavigationProperty Name="DynamicDocumentLists" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DynamicDocumentList_Forms" FromRole="Forms" ToRole="DynamicDocumentList" />
+    <NavigationProperty Name="Layout_Types" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Forms_Layout_Types" FromRole="Forms" ToRole="Layout_Types" />
+    <NavigationProperty Name="Table_Forms" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Table_Forms_Filter_Forms" FromRole="Forms" ToRole="Table_Forms" />
+    <NavigationProperty Name="Table_Forms1" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Table_Forms_Forms" FromRole="Forms" ToRole="Table_Forms" />
+    <Property Type="String" Name="Script" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Def_Data" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Can_Delete" Type="Boolean" />
+    <Property Name="Ban_Edit" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Grid" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Control">
+    <Property Name="Document_Id" Type="Guid" />
+    <Property Name="Is_Detail" Type="Boolean" />
+    <NavigationProperty Name="Document_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_44" FromRole="Grids" ToRole="Document_Defs" />
+  </EntityType>
+  <EntityType Name="Image_Attribute">
+    <Key>
+      <PropertyRef Name="Document_Id" />
+      <PropertyRef Name="Def_Id" />
+      <PropertyRef Name="Created" />
+    </Key>
+    <Property Name="Document_Id" Type="Guid" Nullable="false" />
+    <Property Name="Def_Id" Type="Guid" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Value" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="Expired" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Attribute_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_51" FromRole="Image_Attributes" ToRole="Attribute_Defs" />
+    <NavigationProperty Name="Document" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_50" FromRole="Image_Attributes" ToRole="Documents" />
+    <NavigationProperty Name="Worker" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Image_Attributes_Workers" FromRole="Image_Attributes" ToRole="Workers" />
+    <Property Name="File_Name" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Image" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Control">
+    <Property Name="Image_Data" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Attribute_Id" Type="Guid" />
+  </EntityType>
+  <EntityType Name="Int_Attribute">
+    <Key>
+      <PropertyRef Name="Document_Id" />
+      <PropertyRef Name="Def_Id" />
+      <PropertyRef Name="Created" />
+    </Key>
+    <Property Name="Document_Id" Type="Guid" Nullable="false" />
+    <Property Name="Def_Id" Type="Guid" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Value" Type="Int32" Nullable="false" />
+    <Property Name="Expired" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Attribute_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_11" FromRole="Int_Attributes" ToRole="Attribute_Defs" />
+    <NavigationProperty Name="Document" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_10" FromRole="Int_Attributes" ToRole="Documents" />
+    <NavigationProperty Name="Worker" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Int_Attributes_Workers" FromRole="Int_Attributes" ToRole="Workers" />
+  </EntityType>
+  <EntityType Name="Layout_Type">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int16" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Forms" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Forms_Layout_Types" FromRole="Layout_Types" ToRole="Forms" />
+    <NavigationProperty Name="Panels" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Panels_Layout_Types" FromRole="Layout_Types" ToRole="Panels" />
+  </EntityType>
+  <EntityType Name="Menu" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Control">
+    <Property Name="Form_Id" Type="Guid" />
+    <Property Name="Process_Id" Type="Guid" />
+    <NavigationProperty Name="Table_Forms" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Menus_Table_Forms" FromRole="Menus" ToRole="Table_Forms" />
+    <NavigationProperty Name="Workflow_Processes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Menus_Workflow_Processes" FromRole="Menus" ToRole="Workflow_Processes" />
+    <Property Type="Guid" Name="State_Type_Id" />
+    <NavigationProperty Name="Document_State_Types" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Menus_Document_State_Types" FromRole="Menu" ToRole="Document_State_Type" />
+    <Property Type="String" Name="Def_Data" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Object_Def">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Parent_Id" Type="Guid" />
+    <Property Name="Name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Full_Name" Type="String" MaxLength="900" Unicode="false" FixedLength="false" />
+    <Property Name="Created" Type="DateTime" Precision="3" />
+    <Property Name="Deleted" Type="Boolean" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Order_Index" Type="Int16" />
+    <NavigationProperty Name="Children" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_1" FromRole="Object_Defs" ToRole="Object_Defs1" />
+    <NavigationProperty Name="Parent" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_1" FromRole="Object_Defs1" ToRole="Object_Defs" />
+    <NavigationProperty Name="Org_Units_1" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.OrgUnits_ObjectDefs" FromRole="Object_Def" ToRole="Org_Unit" />
+    <NavigationProperty Name="Translations" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Object_Def_Translations_Object_Defs" FromRole="Object_Def" ToRole="Object_Def_Translations" />
+    <NavigationProperty Name="Role_Refs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Role_Refs_Object_Defs" FromRole="Object_Def" ToRole="Role_Refs" />
+    <NavigationProperty Name="Object_Def_Attributes1" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Object_Def_Attributes_Object_Defs" FromRole="Object_Def" ToRole="Object_Def_Attributes" />
+  </EntityType>
+  <EntityType Name="Org_Position" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Subject">
+    <Property Name="Title_Id" Type="Int16" />
+    <NavigationProperty Name="Workers" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Workers_Org_Positions" FromRole="Org_Positions" ToRole="Workers" />
+    <NavigationProperty Name="Title" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_28" FromRole="Org_Positions" ToRole="Titles" />
+    <NavigationProperty Name="Roles" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.Org_Positions_Roles" FromRole="Org_Position" ToRole="Role" />
+  </EntityType>
+  <EntityType Name="Org_Unit_Type">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int16" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Org_Units" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Org_Units_Org_Unit_Types" FromRole="Org_Unit_Types" ToRole="Org_Units" />
+  </EntityType>
+  <EntityType Name="Org_Unit" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Subject">
+    <Property Name="Type_Id" Type="Int16" />
+    <Property Name="INN" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Org_Unit_Types" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Org_Units_Org_Unit_Types" FromRole="Org_Units" ToRole="Org_Unit_Types" />
+    <NavigationProperty Name="Roles" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.Org_Units_Roles" FromRole="Org_Unit" ToRole="Role" />
+    <NavigationProperty Name="Object_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.OrgUnits_ObjectDefs" FromRole="Org_Unit" ToRole="Object_Def" />
+    <NavigationProperty Name="Organizations" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Organizations_Org_Units" FromRole="Org_Unit" ToRole="Organization" />
+    <NavigationProperty Name="Attribute_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Attribute_Def_Org_Units" FromRole="Org_Unit" ToRole="Attribute_Def" />
+  </EntityType>
+  <EntityType Name="Panel" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Control">
+    <Property Name="Is_Horizontal" Type="Boolean" />
+    <Property Name="Layout_Id" Type="Int16" />
+    <NavigationProperty Name="Layout_Types" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Panels_Layout_Types" FromRole="Panels" ToRole="Layout_Types" />
+  </EntityType>
+  <EntityType Name="Permission_Def">
+    <Key>
+      <PropertyRef Name="Def_Id" />
+      <PropertyRef Name="Permission_Id" />
+    </Key>
+    <Property Name="Def_Id" Type="Guid" Nullable="false" />
+    <Property Name="Permission_Id" Type="Guid" Nullable="false" />
+    <Property Name="AllowInsert" Type="Boolean" Nullable="false" />
+    <Property Name="AllowUpdate" Type="Boolean" Nullable="false" />
+    <Property Name="AllowDelete" Type="Boolean" Nullable="false" />
+    <Property Name="AllowSelect" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Object_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Permission_Defs_Object_Defs" FromRole="Permission_Defs" ToRole="Object_Defs" />
+    <NavigationProperty Name="Permission" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Permission_Defs_Permissions" FromRole="Permission_Defs" ToRole="Permissions" />
+    <Property Type="Boolean" Name="Is_Disabled" />
+    <Property Name="Access_Type" Type="Int16" />
+  </EntityType>
+  <EntityType Name="Permission" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Security_Object">
+    <NavigationProperty Name="Permission_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Permission_Defs_Permissions" FromRole="Permissions" ToRole="Permission_Defs" />
+    <NavigationProperty Name="Roles" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.Role_Permissions" FromRole="Permission" ToRole="Role" />
+    <NavigationProperty Name="Document_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_Defs_Create_Permissions" FromRole="Permission" ToRole="Document_Def" />
+    <NavigationProperty Name="Document_Defs1" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_Defs_Delete_Permissions" FromRole="Permission" ToRole="Document_Def" />
+    <NavigationProperty Name="Document_Defs2" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_Defs_Select_Permissions" FromRole="Permission" ToRole="Document_Def" />
+    <NavigationProperty Name="Document_Defs3" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_Defs_Update_Permissions" FromRole="Permission" ToRole="Document_Def" />
+    <NavigationProperty Name="Table_Forms" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Table_Forms_Add_New_Permissions" FromRole="Permission" ToRole="Table_Form" />
+    <NavigationProperty Name="Table_Forms1" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Table_Forms_Open_Permissions" FromRole="Permission" ToRole="Table_Form" />
+  </EntityType>
+  <EntityType Name="Person" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Subject">
+    <Property Name="Last_Name" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="First_Name" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Middle_Name" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Birth_Date" Type="DateTime" Precision="3" />
+    <Property Name="Sex" Type="Boolean" />
+    <Property Name="Passport_No" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Passport_Date" Type="DateTime" Precision="3" />
+    <Property Name="Passport_Org" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="INN" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Presentation_Activity" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Activity">
+    <Property Name="Form_Id" Type="Guid" />
+    <Property Name="Message" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Is_Exception" Type="Boolean" />
+    <NavigationProperty Name="Control" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Presentation_Activities_Controls" FromRole="Presentation_Activities" ToRole="Controls" />
+  </EntityType>
+  <EntityType Name="Process_Call_Activity" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Activity">
+    <Property Name="Process_Id" Type="Guid" />
+    <NavigationProperty Name="Workflow_Processes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_125" FromRole="Process_Call_Activities" ToRole="Workflow_Processes" />
+  </EntityType>
+  <EntityType Name="Project_Folder" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Project_Item" />
+  <EntityType Name="Project_Item" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def" />
+  <EntityType Name="Project" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Project_Item" />
+  <EntityType Name="Radio_Item" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Control">
+    <Property Name="Enum_Id" Type="Guid" />
+    <NavigationProperty Name="Enum_Items" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Radio_Items_Enum_Items" FromRole="Radio_Items" ToRole="Enum_Items" />
+  </EntityType>
+  <EntityType Name="Report_Band" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Control" />
+  <EntityType Name="Report_Editor" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Control">
+    <Property Name="Attribute_Id" Type="Guid" />
+    <Property Name="Summary_Id" Type="Int16" />
+    <Property Name="Width" Type="Double" />
+    <NavigationProperty Name="Report_Summary_Types" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Report_Editors_Summary_Types" FromRole="Report_Editors" ToRole="Report_Summary_Types" />
+  </EntityType>
+  <EntityType Name="Report_Section_Type">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int16" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Report_Sections" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Report_Sections_Section_Types" FromRole="Report_Section_Types" ToRole="Report_Sections" />
+  </EntityType>
+  <EntityType Name="Report_Section" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Control">
+    <Property Name="Type_Id" Type="Int16" />
+    <NavigationProperty Name="Report_Section_Types" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Report_Sections_Section_Types" FromRole="Report_Sections" ToRole="Report_Section_Types" />
+  </EntityType>
+  <EntityType Name="Report_Summary_Type">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int16" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Report_Editors" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Report_Editors_Summary_Types" FromRole="Report_Summary_Types" ToRole="Report_Editors" />
+  </EntityType>
+  <EntityType Name="Report_Text" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Control" />
+  <EntityType Name="Report" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Control">
+    <Property Name="Document_Id" Type="Guid" />
+    <NavigationProperty Name="Document_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_46" FromRole="Reports" ToRole="Document_Defs" />
+  </EntityType>
+  <EntityType Name="Role" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Security_Object">
+    <NavigationProperty Name="Org_Positions" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.Org_Positions_Roles" FromRole="Role" ToRole="Org_Position" />
+    <NavigationProperty Name="Org_Units" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.Org_Units_Roles" FromRole="Role" ToRole="Org_Unit" />
+    <NavigationProperty Name="Workers" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.Worker_Roles" FromRole="Role" ToRole="Worker" />
+    <NavigationProperty Name="Permissions" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.Role_Permissions" FromRole="Role" ToRole="Permission" />
+    <NavigationProperty Name="Role_Refs_1" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Role_Refs_Roles" FromRole="Role" ToRole="Role_Refs" />
+  </EntityType>
+  <EntityType Name="Rule" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Def">
+    <Property Name="Script" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Workflow_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Def_Rules" FromRole="Rule" ToRole="Workflow_Def" />
+  </EntityType>
+  <EntityType Name="Script_Activity" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Activity">
+    <Property Name="Script" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Script" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def">
+    <Property Type="String" Name="Script_Text" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Security_Object" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def" />
+  <EntityType Name="Start_Activity" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Activity" />
+  <EntityType Name="Subject" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def">
+    <Property Name="Address" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Table_Column" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Control">
+    <Property Name="Attribute_Id" Type="Guid" />
+    <NavigationProperty Name="Attribute_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Table_Columns_Attribute_Defs" FromRole="Table_Columns" ToRole="Attribute_Defs" />
+    <Property Type="String" Name="Attribute_Name" MaxLength="250" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Table_Form" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Control">
+    <Property Name="Document_Id" Type="Guid" />
+    <Property Name="Form_Id" Type="Guid" />
+    <Property Name="Filter_Form_Id" Type="Guid" />
+    <NavigationProperty Name="Document_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Table_Forms_Document_Defs" FromRole="Table_Forms" ToRole="Document_Defs" />
+    <NavigationProperty Name="Filter_Form" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Table_Forms_Filter_Forms" FromRole="Table_Forms" ToRole="Forms" />
+    <NavigationProperty Name="Form" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Table_Forms_Forms" FromRole="Table_Forms" ToRole="Forms" />
+    <NavigationProperty Name="Menus" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Menus_Table_Forms" FromRole="Table_Forms" ToRole="Menus" />
+    <Property Type="String" Name="Script" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Def_Data" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Guid" Name="Open_Permission_Id" />
+    <Property Type="Guid" Name="Add_New_Permission_Id" />
+    <NavigationProperty Name="Add_New_Permission" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Table_Forms_Add_New_Permissions" FromRole="Table_Form" ToRole="Permission" />
+    <NavigationProperty Name="Open_Permission" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Table_Forms_Open_Permissions" FromRole="Table_Form" ToRole="Permission" />
+    <Property Type="Boolean" Name="Can_Add_New" />
+    <Property Type="Boolean" Name="Can_Edit" />
+    <Property Type="Boolean" Name="Can_Delete" />
+    <Property Name="Rows" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Table_Report" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Report">
+    <Property Name="Is_Portret" Type="Boolean" />
+    <Property Type="String" Name="Def_Data" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Text_Attribute">
+    <Key>
+      <PropertyRef Name="Document_Id" />
+      <PropertyRef Name="Def_Id" />
+      <PropertyRef Name="Created" />
+    </Key>
+    <Property Name="Document_Id" Type="Guid" Nullable="false" />
+    <Property Name="Def_Id" Type="Guid" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Value" Type="String" MaxLength="850" Unicode="false" FixedLength="false" />
+    <Property Name="Expired" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Attribute_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_16" FromRole="Text_Attributes" ToRole="Attribute_Defs" />
+    <NavigationProperty Name="Document" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_15" FromRole="Text_Attributes" ToRole="Documents" />
+    <NavigationProperty Name="Worker" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Text_Attributes_Workers" FromRole="Text_Attributes" ToRole="Workers" />
+    <Property Type="String" Name="Upper_Value" MaxLength="850" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+  </EntityType>
+  <EntityType Name="Text" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Control" />
+  <EntityType Name="Title">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int16" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Org_Positions" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_28" FromRole="Titles" ToRole="Org_Positions" />
+  </EntityType>
+  <EntityType Name="User_Action" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Def">
+    <NavigationProperty Name="Activity_Links" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_120" FromRole="User_Actions" ToRole="Activity_Links" />
+    <NavigationProperty Name="Buttons" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_123" FromRole="User_Actions" ToRole="Buttons" />
+  </EntityType>
+  <EntityType Name="Worker" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Person">
+    <Property Name="OrgPosition_Id" Type="Guid" />
+    <Property Name="User_Name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="User_Password" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Blob_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Blob_Attributes_Workers" FromRole="Workers" ToRole="Blob_Attributes" />
+    <NavigationProperty Name="Boolean_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Boolean_Attributes_Workers" FromRole="Workers" ToRole="Boolean_Attributes" />
+    <NavigationProperty Name="Currency_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Currency_Attributes_Workers" FromRole="Workers" ToRole="Currency_Attributes" />
+    <NavigationProperty Name="Date_Time_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Date_Time_Attributes_Workers" FromRole="Workers" ToRole="Date_Time_Attributes" />
+    <NavigationProperty Name="Document_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_Attributes_Workers" FromRole="Workers" ToRole="Document_Attributes" />
+    <NavigationProperty Name="Document_States" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_States_Workers" FromRole="Workers" ToRole="Document_States" />
+    <NavigationProperty Name="DocumentList_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_DocumentList_Attributes_Workers" FromRole="Workers" ToRole="DocumentList_Attributes" />
+    <NavigationProperty Name="Documents" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Documents_Workers" FromRole="Workers" ToRole="Documents" />
+    <NavigationProperty Name="Enum_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Enum_Attributes_Workers" FromRole="Workers" ToRole="Enum_Attributes" />
+    <NavigationProperty Name="Float_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Float_Attributes_Workers" FromRole="Workers" ToRole="Float_Attributes" />
+    <NavigationProperty Name="Image_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Image_Attributes_Workers" FromRole="Workers" ToRole="Image_Attributes" />
+    <NavigationProperty Name="Int_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Int_Attributes_Workers" FromRole="Workers" ToRole="Int_Attributes" />
+    <NavigationProperty Name="Org_Positions" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Workers_Org_Positions" FromRole="Workers" ToRole="Org_Positions" />
+    <NavigationProperty Name="Text_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Text_Attributes_Workers" FromRole="Workers" ToRole="Text_Attributes" />
+    <NavigationProperty Name="Roles" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.Worker_Roles" FromRole="Worker" ToRole="Role" />
+    <NavigationProperty Name="Doc_State_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Doc_State_Attributes_Workers" FromRole="Worker" ToRole="Doc_State_Attribute" />
+    <NavigationProperty Name="Org_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Org_Attributes_Workers" FromRole="Worker" ToRole="Org_Attributes" />
+    <Property Type="Int32" Name="Language_Id" />
+    <NavigationProperty Name="Language" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Workers_Languages" FromRole="Worker" ToRole="Language" />
+    <NavigationProperty Name="Object_Def_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Object_Def_Attributes_Workers" FromRole="Worker" ToRole="Object_Def_Attributes" />
+  </EntityType>
+  <EntityType Name="Workflow_Activity" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Def">
+    <Property Name="Type_Id" Type="Int32" />
+    <NavigationProperty Name="Target_Links" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_108" FromRole="Workflow_Activities" ToRole="Activity_Links" />
+    <NavigationProperty Name="Source_Links" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_109" FromRole="Workflow_Activities" ToRole="Activity_Links" />
+  </EntityType>
+  <EntityType Name="Workflow_Def" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def">
+    <NavigationProperty Name="Rules" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Def_Rules" FromRole="Workflow_Def" ToRole="Rule" />
+    <NavigationProperty Name="Workflow_Gate_Refs1" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Workflow_Gate_Ref_Workflow_Defs" FromRole="Workflow_Def" ToRole="Workflow_Gate_Ref" />
+    <NavigationProperty Name="Workflow_Gates" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Workflow_Gate_Workflow_Defs" FromRole="Workflow_Def" ToRole="Workflow_Gate" />
+  </EntityType>
+  <EntityType Name="Workflow_Process" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Def">
+    <Property Name="Diagram_Data" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Buttons" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_121" FromRole="Workflow_Processes" ToRole="Buttons" />
+    <NavigationProperty Name="Menus" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Menus_Workflow_Processes" FromRole="Workflow_Processes" ToRole="Menus" />
+    <NavigationProperty Name="Process_Call_Activities" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.R_125" FromRole="Workflow_Processes" ToRole="Process_Call_Activities" />
+    <Property Type="String" Name="Script" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Graph_data" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="Editors" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Editors_Workflow_Processes" FromRole="Workflow_Process" ToRole="Editor" />
+  </EntityType>
+  <Association Name="R_108">
+    <End Role="Workflow_Activities" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Activity" Multiplicity="0..1" />
+    <End Role="Activity_Links" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Activity_Link" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Workflow_Activities">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activity_Links">
+        <PropertyRef Name="Source_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_109">
+    <End Role="Workflow_Activities" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Activity" Multiplicity="0..1" />
+    <End Role="Activity_Links" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Activity_Link" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Workflow_Activities">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activity_Links">
+        <PropertyRef Name="Target_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_120">
+    <End Role="User_Actions" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.User_Action" Multiplicity="0..1" />
+    <End Role="Activity_Links" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Activity_Link" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User_Actions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activity_Links">
+        <PropertyRef Name="User_Action_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Blob_Attributes_Attribute_Defs">
+    <End Role="Attribute_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Attribute_Def" Multiplicity="1" />
+    <End Role="Blob_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Blob_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Attribute_Defs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Blob_Attributes">
+        <PropertyRef Name="Def_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Boolean_Attributes_Attribute_Defs">
+    <End Role="Attribute_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Attribute_Def" Multiplicity="1" />
+    <End Role="Boolean_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Boolean_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Attribute_Defs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Boolean_Attributes">
+        <PropertyRef Name="Def_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DocumentControl_Attribute_Defs">
+    <End Role="Attribute_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Attribute_Def" Multiplicity="0..1" />
+    <End Role="DocumentControl" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.DocumentControl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Attribute_Defs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DocumentControl">
+        <PropertyRef Name="Attribute_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DocumentList_Attributes_Attribute_Defs">
+    <End Role="Attribute_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Attribute_Def" Multiplicity="1" />
+    <End Role="DocumentList_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.DocumentList_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Attribute_Defs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DocumentList_Attributes">
+        <PropertyRef Name="Def_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DocumentListForms_Attribute_Defs">
+    <End Role="Attribute_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Attribute_Def" Multiplicity="0..1" />
+    <End Role="DocumentList_Forms" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.DocumentList_Form" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Attribute_Defs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DocumentList_Forms">
+        <PropertyRef Name="Attribute_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_Columns_Attribute_Defs">
+    <End Role="Attribute_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Attribute_Def" Multiplicity="0..1" />
+    <End Role="Table_Columns" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Table_Column" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Attribute_Defs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Table_Columns">
+        <PropertyRef Name="Attribute_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_11">
+    <End Role="Attribute_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Attribute_Def" Multiplicity="1" />
+    <End Role="Int_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Int_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Attribute_Defs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Int_Attributes">
+        <PropertyRef Name="Def_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_14">
+    <End Role="Attribute_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Attribute_Def" Multiplicity="1" />
+    <End Role="Float_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Float_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Attribute_Defs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Float_Attributes">
+        <PropertyRef Name="Def_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_16">
+    <End Role="Attribute_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Attribute_Def" Multiplicity="1" />
+    <End Role="Text_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Text_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Attribute_Defs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Text_Attributes">
+        <PropertyRef Name="Def_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_18">
+    <End Role="Attribute_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Attribute_Def" Multiplicity="1" />
+    <End Role="Currency_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Currency_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Attribute_Defs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Currency_Attributes">
+        <PropertyRef Name="Def_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_20">
+    <End Role="Attribute_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Attribute_Def" Multiplicity="1" />
+    <End Role="Date_Time_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Date_Time_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Attribute_Defs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Date_Time_Attributes">
+        <PropertyRef Name="Def_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_22">
+    <End Role="Attribute_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Attribute_Def" Multiplicity="1" />
+    <End Role="Enum_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Enum_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Attribute_Defs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Enum_Attributes">
+        <PropertyRef Name="Def_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_39">
+    <End Role="Attribute_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Attribute_Def" Multiplicity="0..1" />
+    <End Role="Editors" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Editor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Attribute_Defs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Editors">
+        <PropertyRef Name="Attribute_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_48">
+    <End Role="Attribute_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Attribute_Def" Multiplicity="1" />
+    <End Role="Document_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Attribute_Defs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Document_Attributes">
+        <PropertyRef Name="Def_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_5">
+    <End Role="Data_Types" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Data_Type" Multiplicity="0..1" />
+    <End Role="Attribute_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Attribute_Def" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Data_Types">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Attribute_Defs">
+        <PropertyRef Name="Type_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_51">
+    <End Role="Attribute_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Attribute_Def" Multiplicity="1" />
+    <End Role="Image_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Image_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Attribute_Defs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Image_Attributes">
+        <PropertyRef Name="Def_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_65">
+    <End Role="Attribute_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Attribute_Def" Multiplicity="0..1" />
+    <End Role="Combo_Boxes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Combo_Box" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Attribute_Defs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Combo_Boxes">
+        <PropertyRef Name="Attribute_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_7">
+    <End Role="Document_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Def" Multiplicity="0..1" />
+    <End Role="Attribute_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Attribute_Def" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Document_Defs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Attribute_Defs">
+        <PropertyRef Name="Document_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_8">
+    <End Role="Enum_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Enum_Def" Multiplicity="0..1" />
+    <End Role="Attribute_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Attribute_Def" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Enum_Defs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Attribute_Defs">
+        <PropertyRef Name="Enum_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Blob_Attributes_Documents">
+    <End Role="Documents" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document" Multiplicity="1" />
+    <End Role="Blob_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Blob_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Documents">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Blob_Attributes">
+        <PropertyRef Name="Document_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Blob_Attributes_Workers">
+    <End Role="Workers" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Worker" Multiplicity="1" />
+    <End Role="Blob_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Blob_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Workers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Blob_Attributes">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Boolean_Attributes_Documents">
+    <End Role="Documents" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document" Multiplicity="1" />
+    <End Role="Boolean_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Boolean_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Documents">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Boolean_Attributes">
+        <PropertyRef Name="Document_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Boolean_Attributes_Workers">
+    <End Role="Workers" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Worker" Multiplicity="1" />
+    <End Role="Boolean_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Boolean_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Workers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Boolean_Attributes">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_121">
+    <End Role="Workflow_Processes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Process" Multiplicity="0..1" />
+    <End Role="Buttons" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Button" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Workflow_Processes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Buttons">
+        <PropertyRef Name="Process_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_123">
+    <End Role="User_Actions" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.User_Action" Multiplicity="0..1" />
+    <End Role="Buttons" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Button" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User_Actions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Buttons">
+        <PropertyRef Name="User_Action_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Presentation_Activities_Controls">
+    <End Role="Controls" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Control" Multiplicity="0..1" />
+    <End Role="Presentation_Activities" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Presentation_Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Controls">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Presentation_Activities">
+        <PropertyRef Name="Form_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Currency_Attributes_Workers">
+    <End Role="Workers" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Worker" Multiplicity="1" />
+    <End Role="Currency_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Currency_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Workers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Currency_Attributes">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_17">
+    <End Role="Documents" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document" Multiplicity="1" />
+    <End Role="Currency_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Currency_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Documents">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Currency_Attributes">
+        <PropertyRef Name="Document_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Date_Time_Attributes_Workers">
+    <End Role="Workers" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Worker" Multiplicity="1" />
+    <End Role="Date_Time_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Date_Time_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Workers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Date_Time_Attributes">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_19">
+    <End Role="Documents" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document" Multiplicity="1" />
+    <End Role="Date_Time_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Date_Time_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Documents">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Date_Time_Attributes">
+        <PropertyRef Name="Document_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Document_Activities_DocumentActivityType">
+    <End Role="DocumentActivityType" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.DocumentActivityType" Multiplicity="0..1" />
+    <End Role="Document_Activities" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DocumentActivityType">
+        <PropertyRef Name="DocActivityTypeId" />
+      </Principal>
+      <Dependent Role="Document_Activities">
+        <PropertyRef Name="DocActivityTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_80">
+    <End Role="Document_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Def" Multiplicity="0..1" />
+    <End Role="Document_Activities" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Document_Defs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Document_Activities">
+        <PropertyRef Name="Document_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Document_Attributes_Workers">
+    <End Role="Workers" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Worker" Multiplicity="1" />
+    <End Role="Document_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Workers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Document_Attributes">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_47">
+    <End Role="Documents" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document" Multiplicity="1" />
+    <End Role="Document_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Documents">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Document_Attributes">
+        <PropertyRef Name="Document_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_49">
+    <End Role="Documents" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document" Multiplicity="1" />
+    <End Role="Document_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Documents">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Document_Attributes">
+        <PropertyRef Name="Value" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_Forms_Document_Defs">
+    <End Role="Document_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Def" Multiplicity="0..1" />
+    <End Role="Table_Forms" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Table_Form" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Document_Defs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Table_Forms">
+        <PropertyRef Name="Document_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_3">
+    <End Role="Document_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Def" Multiplicity="0..1" />
+    <End Role="Document_Defs1" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Def" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Document_Defs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Document_Defs1">
+        <PropertyRef Name="Ancestor_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_38">
+    <End Role="Document_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Def" Multiplicity="0..1" />
+    <End Role="Forms" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Form" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Document_Defs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Forms">
+        <PropertyRef Name="Document_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_44">
+    <End Role="Document_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Def" Multiplicity="0..1" />
+    <End Role="Grids" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Grid" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Document_Defs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Grids">
+        <PropertyRef Name="Document_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_46">
+    <End Role="Document_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Def" Multiplicity="0..1" />
+    <End Role="Reports" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Report" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Document_Defs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Reports">
+        <PropertyRef Name="Document_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_9">
+    <End Role="Document_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Def" Multiplicity="0..1" />
+    <End Role="Documents" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Document_Defs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Documents">
+        <PropertyRef Name="Def_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Document_States_Workers">
+    <End Role="Workers" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Worker" Multiplicity="1" />
+    <End Role="Document_States" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_State" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Workers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Document_States">
+        <PropertyRef Name="Worker_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_88">
+    <End Role="Documents" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document" Multiplicity="1" />
+    <End Role="Document_States" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_State" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Documents">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Document_States">
+        <PropertyRef Name="Document_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DocumentControl_Forms">
+    <End Role="Forms" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Form" Multiplicity="0..1" />
+    <End Role="DocumentControl" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.DocumentControl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Forms">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DocumentControl">
+        <PropertyRef Name="Form_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DocumentList_Attributes_Documents">
+    <End Role="Documents" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document" Multiplicity="1" />
+    <End Role="DocumentList_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.DocumentList_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Documents">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DocumentList_Attributes">
+        <PropertyRef Name="Document_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DocumentList_Attributes_Workers">
+    <End Role="Workers" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Worker" Multiplicity="1" />
+    <End Role="DocumentList_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.DocumentList_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Workers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DocumentList_Attributes">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Documents_Workers">
+    <End Role="Workers" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Worker" Multiplicity="1" />
+    <End Role="Documents" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Workers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Documents">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_10">
+    <End Role="Documents" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document" Multiplicity="1" />
+    <End Role="Int_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Int_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Documents">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Int_Attributes">
+        <PropertyRef Name="Document_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_13">
+    <End Role="Documents" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document" Multiplicity="1" />
+    <End Role="Float_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Float_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Documents">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Float_Attributes">
+        <PropertyRef Name="Document_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_15">
+    <End Role="Documents" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document" Multiplicity="1" />
+    <End Role="Text_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Text_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Documents">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Text_Attributes">
+        <PropertyRef Name="Document_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_21">
+    <End Role="Documents" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document" Multiplicity="1" />
+    <End Role="Enum_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Enum_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Documents">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Enum_Attributes">
+        <PropertyRef Name="Document_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_50">
+    <End Role="Documents" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document" Multiplicity="1" />
+    <End Role="Image_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Image_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Documents">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Image_Attributes">
+        <PropertyRef Name="Document_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DynamicDocumentList_Forms">
+    <End Role="Forms" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Form" Multiplicity="0..1" />
+    <End Role="DynamicDocumentList" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.DynamicDocumentList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Forms">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DynamicDocumentList">
+        <PropertyRef Name="Form_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DynamicDocumentList_Scripts">
+    <End Role="Scripts" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Script" Multiplicity="0..1" />
+    <End Role="DynamicDocumentList" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.DynamicDocumentList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Scripts">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DynamicDocumentList">
+        <PropertyRef Name="ScriptId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Enum_Attributes_Workers">
+    <End Role="Workers" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Worker" Multiplicity="1" />
+    <End Role="Enum_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Enum_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Workers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Enum_Attributes">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_23">
+    <End Role="Enum_Items" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Enum_Item" Multiplicity="1" />
+    <End Role="Enum_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Enum_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Enum_Items">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Enum_Attributes">
+        <PropertyRef Name="Value" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Radio_Items_Enum_Items">
+    <End Role="Enum_Items" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Enum_Item" Multiplicity="0..1" />
+    <End Role="Radio_Items" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Radio_Item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Enum_Items">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Radio_Items">
+        <PropertyRef Name="Enum_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Float_Attributes_Workers">
+    <End Role="Workers" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Worker" Multiplicity="1" />
+    <End Role="Float_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Float_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Workers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Float_Attributes">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Forms_Layout_Types">
+    <End Role="Layout_Types" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Layout_Type" Multiplicity="0..1" />
+    <End Role="Forms" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Form" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Layout_Types">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Forms">
+        <PropertyRef Name="Layout_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_Forms_Filter_Forms">
+    <End Role="Forms" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Form" Multiplicity="0..1" />
+    <End Role="Table_Forms" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Table_Form" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Forms">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Table_Forms">
+        <PropertyRef Name="Filter_Form_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_Forms_Forms">
+    <End Role="Forms" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Form" Multiplicity="0..1" />
+    <End Role="Table_Forms" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Table_Form" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Forms">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Table_Forms">
+        <PropertyRef Name="Form_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Image_Attributes_Workers">
+    <End Role="Workers" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Worker" Multiplicity="1" />
+    <End Role="Image_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Image_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Workers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Image_Attributes">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Int_Attributes_Workers">
+    <End Role="Workers" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Worker" Multiplicity="1" />
+    <End Role="Int_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Int_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Workers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Int_Attributes">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Panels_Layout_Types">
+    <End Role="Layout_Types" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Layout_Type" Multiplicity="0..1" />
+    <End Role="Panels" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Panel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Layout_Types">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Panels">
+        <PropertyRef Name="Layout_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Menus_Table_Forms">
+    <End Role="Table_Forms" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Table_Form" Multiplicity="0..1" />
+    <End Role="Menus" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Menu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Table_Forms">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Menus">
+        <PropertyRef Name="Form_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Menus_Workflow_Processes">
+    <End Role="Workflow_Processes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Process" Multiplicity="0..1" />
+    <End Role="Menus" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Menu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Workflow_Processes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Menus">
+        <PropertyRef Name="Process_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Permission_Defs_Object_Defs">
+    <End Role="Object_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def" Multiplicity="1" />
+    <End Role="Permission_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Permission_Def" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Object_Defs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Permission_Defs">
+        <PropertyRef Name="Def_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_1">
+    <End Role="Object_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def" Multiplicity="0..1" />
+    <End Role="Object_Defs1" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Object_Defs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Object_Defs1">
+        <PropertyRef Name="Parent_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Workers_Org_Positions">
+    <End Role="Org_Positions" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Org_Position" Multiplicity="0..1" />
+    <End Role="Workers" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Worker" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Org_Positions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Workers">
+        <PropertyRef Name="OrgPosition_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_28">
+    <End Role="Titles" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Title" Multiplicity="0..1" />
+    <End Role="Org_Positions" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Org_Position" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Titles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Org_Positions">
+        <PropertyRef Name="Title_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Org_Units_Org_Unit_Types">
+    <End Role="Org_Unit_Types" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Org_Unit_Type" Multiplicity="0..1" />
+    <End Role="Org_Units" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Org_Unit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Org_Unit_Types">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Org_Units">
+        <PropertyRef Name="Type_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Permission_Defs_Permissions">
+    <End Role="Permissions" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Permission" Multiplicity="1" />
+    <End Role="Permission_Defs" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Permission_Def" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Permissions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Permission_Defs">
+        <PropertyRef Name="Permission_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_125">
+    <End Role="Workflow_Processes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Process" Multiplicity="0..1" />
+    <End Role="Process_Call_Activities" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Process_Call_Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Workflow_Processes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Process_Call_Activities">
+        <PropertyRef Name="Process_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Report_Editors_Summary_Types">
+    <End Role="Report_Summary_Types" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Report_Summary_Type" Multiplicity="0..1" />
+    <End Role="Report_Editors" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Report_Editor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Report_Summary_Types">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Report_Editors">
+        <PropertyRef Name="Summary_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Report_Sections_Section_Types">
+    <End Role="Report_Section_Types" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Report_Section_Type" Multiplicity="0..1" />
+    <End Role="Report_Sections" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Report_Section" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Report_Section_Types">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Report_Sections">
+        <PropertyRef Name="Type_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Text_Attributes_Workers">
+    <End Role="Workers" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Worker" Multiplicity="1" />
+    <End Role="Text_Attributes" Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Text_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Workers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Text_Attributes">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Org_Positions_Roles">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Org_Position" Role="Org_Position" Multiplicity="*" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Role" Role="Role" Multiplicity="*" />
+  </Association>
+  <Association Name="Org_Units_Roles">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Org_Unit" Role="Org_Unit" Multiplicity="*" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Role" Role="Role" Multiplicity="*" />
+  </Association>
+  <Association Name="Worker_Roles">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Role" Role="Role" Multiplicity="*" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Worker" Role="Worker" Multiplicity="*" />
+  </Association>
+  <Association Name="OrgUnits_ObjectDefs">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def" Role="Object_Def" Multiplicity="*" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Org_Unit" Role="Org_Unit" Multiplicity="*" />
+  </Association>
+  <Association Name="Role_Permissions">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Permission" Role="Permission" Multiplicity="*" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Role" Role="Role" Multiplicity="*" />
+  </Association>
+  <Association Name="Workflow_Def_Rules">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Def" Role="Workflow_Def" Multiplicity="*" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Rule" Role="Rule" Multiplicity="*" />
+  </Association>
+  <EntityType Name="Organization" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Subject">
+    <Property Type="Guid" Name="Type_Id" />
+    <NavigationProperty Name="Org_Units" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Organizations_Org_Units" FromRole="Organization" ToRole="Org_Unit" />
+    <Property Type="String" Name="Code" MaxLength="12" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Org_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Org_Attributes_Organizations" FromRole="Organization" ToRole="Org_Attributes" />
+    <NavigationProperty Name="Documents" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Documents_Organizations" FromRole="Organization" ToRole="Document" />
+    <NavigationProperty Name="Documents1" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Visibilities" FromRole="Organization" ToRole="Document" />
+  </EntityType>
+  <Association Name="FK_Organizations_Org_Units">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Org_Unit" Role="Org_Unit" Multiplicity="0..1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Organization" Role="Organization" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Org_Unit">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Organization">
+        <PropertyRef Name="Type_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Document_State_Type" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def">
+    <Property Type="Boolean" Name="Read_Only" />
+    <NavigationProperty Name="Document_State_Activities" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_State_Activities_Document_State_Types" FromRole="Document_State_Type" ToRole="Document_State_Activity" />
+    <NavigationProperty Name="Document_States" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_States_Document_State_Types" FromRole="Document_State_Type" ToRole="Document_State" />
+    <NavigationProperty Name="Menus" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Menus_Document_State_Types" FromRole="Document_State_Type" ToRole="Menu" />
+    <NavigationProperty Name="Doc_State_Attributes" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Doc_State_Attributes_Document_State_Types" FromRole="Document_State_Type" ToRole="Doc_State_Attributes" />
+  </EntityType>
+  <EntityType Name="Org_Model" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def">
+    <Property Type="Boolean" Name="Is_Active" />
+  </EntityType>
+  <Association Name="FK_Document_State_Activities_Document_State_Types">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_State_Type" Role="Document_State_Type" Multiplicity="0..1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_State_Activity" Role="Document_State_Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Document_State_Type">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Document_State_Activity">
+        <PropertyRef Name="State_Type_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Document_States_Document_State_Types">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_State_Type" Role="Document_State_Type" Multiplicity="1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_State" Role="Document_State" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Document_State_Type">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Document_State">
+        <PropertyRef Name="State_Type_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Menus_Document_State_Types">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_State_Type" Role="Document_State_Type" Multiplicity="0..1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Menu" Role="Menu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Document_State_Type">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Menu">
+        <PropertyRef Name="State_Type_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DocumentList_Attributes_Documents1">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document" Role="Document" Multiplicity="1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.DocumentList_Attribute" Role="DocumentList_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Document">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DocumentList_Attribute">
+        <PropertyRef Name="Value" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Object_Defs_View">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Guid" Name="Id" Nullable="false" />
+    <Property Type="Guid" Name="Parent_Id" />
+    <Property Type="Int16" Name="Order_Index" />
+    <Property Type="Boolean" Name="Deleted" />
+  </EntityType>
+  <EntityType Name="Generator">
+    <Key>
+      <PropertyRef Name="Organization_Id" />
+      <PropertyRef Name="Document_Def_Id" />
+    </Key>
+    <Property Type="Guid" Name="Organization_Id" Nullable="false" />
+    <Property Type="Guid" Name="Document_Def_Id" Nullable="false" />
+    <Property Type="Int64" Name="Value" />
+  </EntityType>
+  <EntityType Name="Doc_State_Attribute">
+    <Key>
+      <PropertyRef Name="Document_Id" />
+      <PropertyRef Name="Def_Id" />
+      <PropertyRef Name="Created" />
+    </Key>
+    <Property Type="Guid" Name="Document_Id" Nullable="false" />
+    <Property Type="Guid" Name="Def_Id" Nullable="false" />
+    <Property Type="DateTime" Name="Created" Nullable="false" Precision="3" />
+    <Property Type="Guid" Name="Value" Nullable="false" />
+    <Property Type="DateTime" Name="Expired" Nullable="false" Precision="3" />
+    <Property Type="Guid" Name="UserId" Nullable="false" />
+    <NavigationProperty Name="Attribute_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Doc_State_Attributes_Attribute_Defs" FromRole="Doc_State_Attributes" ToRole="Attribute_Def" />
+    <NavigationProperty Name="Document_State_Types" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Doc_State_Attributes_Document_State_Types" FromRole="Doc_State_Attributes" ToRole="Document_State_Type" />
+    <NavigationProperty Name="Document" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Doc_State_Attributes_Documents" FromRole="Doc_State_Attributes" ToRole="Document" />
+    <NavigationProperty Name="Worker" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Doc_State_Attributes_Workers" FromRole="Doc_State_Attribute" ToRole="Worker" />
+  </EntityType>
+  <EntityType Name="Org_Attribute">
+    <Key>
+      <PropertyRef Name="Document_Id" />
+      <PropertyRef Name="Def_Id" />
+      <PropertyRef Name="Created" />
+    </Key>
+    <Property Type="Guid" Name="Document_Id" Nullable="false" />
+    <Property Type="Guid" Name="Def_Id" Nullable="false" />
+    <Property Type="DateTime" Name="Created" Nullable="false" Precision="3" />
+    <Property Type="Guid" Name="Value" Nullable="false" />
+    <Property Type="DateTime" Name="Expired" Nullable="false" Precision="3" />
+    <Property Type="Guid" Name="UserId" Nullable="false" />
+    <NavigationProperty Name="Attribute_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Org_Attributes_Attribute_Defs" FromRole="Org_Attributes" ToRole="Attribute_Def" />
+    <NavigationProperty Name="Document" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Org_Attributes_Documents" FromRole="Org_Attributes" ToRole="Document" />
+    <NavigationProperty Name="Organization" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Org_Attributes_Organizations" FromRole="Org_Attributes" ToRole="Organization" />
+    <NavigationProperty Name="Worker" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Org_Attributes_Workers" FromRole="Org_Attributes" ToRole="Worker" />
+  </EntityType>
+  <Association Name="FK_Doc_State_Attributes_Attribute_Defs">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Attribute_Def" Role="Attribute_Def" Multiplicity="1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Doc_State_Attribute" Role="Doc_State_Attributes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Attribute_Def">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Doc_State_Attributes">
+        <PropertyRef Name="Def_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Org_Attributes_Attribute_Defs">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Attribute_Def" Role="Attribute_Def" Multiplicity="1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Org_Attribute" Role="Org_Attributes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Attribute_Def">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Org_Attributes">
+        <PropertyRef Name="Def_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Doc_State_Attributes_Document_State_Types">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_State_Type" Role="Document_State_Type" Multiplicity="1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Doc_State_Attribute" Role="Doc_State_Attributes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Document_State_Type">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Doc_State_Attributes">
+        <PropertyRef Name="Value" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Doc_State_Attributes_Documents">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document" Role="Document" Multiplicity="1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Doc_State_Attribute" Role="Doc_State_Attributes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Document">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Doc_State_Attributes">
+        <PropertyRef Name="Document_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Org_Attributes_Documents">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document" Role="Document" Multiplicity="1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Org_Attribute" Role="Org_Attributes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Document">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Org_Attributes">
+        <PropertyRef Name="Document_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Org_Attributes_Organizations">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Organization" Role="Organization" Multiplicity="1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Org_Attribute" Role="Org_Attributes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Organization">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Org_Attributes">
+        <PropertyRef Name="Value" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Doc_State_Attributes_Workers">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Worker" Role="Worker" Multiplicity="1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Doc_State_Attribute" Role="Doc_State_Attribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Worker">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Doc_State_Attribute">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Org_Attributes_Workers">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Worker" Role="Worker" Multiplicity="1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Org_Attribute" Role="Org_Attributes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Worker">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Org_Attributes">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Documents_Organizations">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Organization" Role="Organization" Multiplicity="0..1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document" Role="Document" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Organization">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Document">
+        <PropertyRef Name="Organization_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Finish_Activities_Controls">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Control" Role="Control" Multiplicity="0..1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Finish_Activity" Role="Finish_Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Control">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Finish_Activity">
+        <PropertyRef Name="Form_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Document_Defs_Create_Permissions">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Permission" Role="Permission" Multiplicity="0..1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Def" Role="Document_Def" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Permission">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Document_Def">
+        <PropertyRef Name="Create_Permission_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Document_Defs_Delete_Permissions">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Permission" Role="Permission" Multiplicity="0..1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Def" Role="Document_Def" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Permission">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Document_Def">
+        <PropertyRef Name="Delete_Permission_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Document_Defs_Select_Permissions">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Permission" Role="Permission" Multiplicity="0..1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Def" Role="Document_Def" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Permission">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Document_Def">
+        <PropertyRef Name="Select_Permission_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Document_Defs_Update_Permissions">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Permission" Role="Permission" Multiplicity="0..1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Def" Role="Document_Def" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Permission">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Document_Def">
+        <PropertyRef Name="Update_Permission_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_Forms_Add_New_Permissions">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Permission" Role="Permission" Multiplicity="0..1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Table_Form" Role="Table_Form" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Permission">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Table_Form">
+        <PropertyRef Name="Add_New_Permission_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_Forms_Open_Permissions">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Permission" Role="Permission" Multiplicity="0..1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Table_Form" Role="Table_Form" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Permission">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Table_Form">
+        <PropertyRef Name="Open_Permission_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DocumentList_Forms_Form_Attribute_Defs">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Attribute_Def" Role="Attribute_Def" Multiplicity="0..1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.DocumentList_Form" Role="DocumentList_Form" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Attribute_Def">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DocumentList_Form">
+        <PropertyRef Name="Form_Attribute_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Document_Route_Transit" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def">
+    <Property Type="Guid" Name="Source_State_Id" />
+    <Property Type="Guid" Name="Target_State_Id" />
+    <Property Type="Guid" Name="Permission_Id" />
+    <NavigationProperty Name="Document_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_Route_Transits_Source_Document_State_Types" FromRole="Document_Route_Transits" ToRole="Document_Def" />
+    <NavigationProperty Name="Target_Document_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_Route_Transits_Target_Document_State_Types" FromRole="Document_Route_Transits" ToRole="Document_Def" />
+  </EntityType>
+  <EntityType Name="Document_Route" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def">
+    <Property Type="Guid" Name="Document_Def_Id" />
+    <NavigationProperty Name="Document_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Document_Routes_Document_Defs" FromRole="Document_Routes" ToRole="Document_Def" />
+  </EntityType>
+  <EntityType Name="Language">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Object_Def_Translations" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Object_Def_Translations_Languages" FromRole="Language" ToRole="Object_Def_Translations" />
+    <NavigationProperty Name="Workers" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Workers_Languages" FromRole="Language" ToRole="Worker" />
+    <Property Name="Culture_Name" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Object_Def_Translation">
+    <Key>
+      <PropertyRef Name="Def_Id" />
+      <PropertyRef Name="Language_Id" />
+    </Key>
+    <Property Type="Guid" Name="Def_Id" Nullable="false" />
+    <Property Type="Int32" Name="Language_Id" Nullable="false" />
+    <Property Type="String" Name="Data_Text" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Language" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Object_Def_Translations_Languages" FromRole="Object_Def_Translations" ToRole="Language" />
+    <NavigationProperty Name="Object_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Object_Def_Translations_Object_Defs" FromRole="Object_Def_Translations" ToRole="Object_Def" />
+  </EntityType>
+  <EntityType Name="Role_Ref">
+    <Key>
+      <PropertyRef Name="Def_Id" />
+      <PropertyRef Name="Role_Id" />
+    </Key>
+    <Property Type="Guid" Name="Def_Id" Nullable="false" />
+    <Property Type="Guid" Name="Role_Id" Nullable="false" />
+    <Property Type="Boolean" Name="Is_Disabled" />
+    <NavigationProperty Name="Object_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Role_Refs_Object_Defs" FromRole="Role_Refs" ToRole="Object_Def" />
+    <NavigationProperty Name="Role" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Role_Refs_Roles" FromRole="Role_Refs" ToRole="Role" />
+  </EntityType>
+  <Association Name="FK_Document_Route_Transits_Source_Document_State_Types">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Def" Role="Document_Def" Multiplicity="0..1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Route_Transit" Role="Document_Route_Transits" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Document_Def">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Document_Route_Transits">
+        <PropertyRef Name="Source_State_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Document_Route_Transits_Target_Document_State_Types">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Def" Role="Document_Def" Multiplicity="0..1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Route_Transit" Role="Document_Route_Transits" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Document_Def">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Document_Route_Transits">
+        <PropertyRef Name="Target_State_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Document_Routes_Document_Defs">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Def" Role="Document_Def" Multiplicity="0..1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Route" Role="Document_Routes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Document_Def">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Document_Routes">
+        <PropertyRef Name="Document_Def_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Object_Def_Translations_Languages">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Language" Role="Language" Multiplicity="1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def_Translation" Role="Object_Def_Translations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Language">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Object_Def_Translations">
+        <PropertyRef Name="Language_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Object_Def_Translations_Object_Defs">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def" Role="Object_Def" Multiplicity="1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def_Translation" Role="Object_Def_Translations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Object_Def">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Object_Def_Translations">
+        <PropertyRef Name="Def_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Role_Refs_Object_Defs">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def" Role="Object_Def" Multiplicity="1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Role_Ref" Role="Role_Refs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Object_Def">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Role_Refs">
+        <PropertyRef Name="Def_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Role_Refs_Roles">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Role" Role="Role" Multiplicity="1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Role_Ref" Role="Role_Refs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Role_Refs">
+        <PropertyRef Name="Role_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Document_Visibilities">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document" Role="Document" Multiplicity="*" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Organization" Role="Organization" Multiplicity="*" />
+  </Association>
+  <EntityType Name="Document_Content">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Guid" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Data" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_Document_States_Prev_Document_State">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_State" Role="Document_State" Multiplicity="0..1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_State" Role="Document_State1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Document_State">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Document_State1">
+        <PropertyRef Name="Prev_Document_State_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Workers_Languages">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Language" Role="Language" Multiplicity="0..1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Worker" Role="Worker" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Language">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Worker">
+        <PropertyRef Name="Language_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Combo_Box_Detail_Attribute_Defs">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Attribute_Def" Role="Attribute_Def" Multiplicity="0..1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Combo_Box" Role="Combo_Box" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Attribute_Def">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Combo_Box">
+        <PropertyRef Name="Detail_Attribute_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Tab_Control" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Control" />
+  <Association Name="FK_Attribute_Def_Org_Units">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Org_Unit" Role="Org_Unit" Multiplicity="0..1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Attribute_Def" Role="Attribute_Def" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Org_Unit">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Attribute_Def">
+        <PropertyRef Name="Org_Type_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Object_Def_Attribute">
+    <Key>
+      <PropertyRef Name="Document_Id" />
+      <PropertyRef Name="Def_Id" />
+      <PropertyRef Name="Created" />
+    </Key>
+    <Property Name="Document_Id" Type="Guid" Nullable="false" />
+    <Property Name="Def_Id" Type="Guid" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Value" Type="Guid" Nullable="false" />
+    <Property Name="Expired" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Attribute_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Object_Def_Attributes_Attribute_Defs" FromRole="Object_Def_Attributes" ToRole="Attribute_Def" />
+    <NavigationProperty Name="Document" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Object_Def_Attributes_Documents" FromRole="Object_Def_Attributes" ToRole="Document" />
+    <NavigationProperty Name="Object_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Object_Def_Attributes_Object_Defs" FromRole="Object_Def_Attributes" ToRole="Object_Def" />
+    <NavigationProperty Name="Worker" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Object_Def_Attributes_Workers" FromRole="Object_Def_Attributes" ToRole="Worker" />
+  </EntityType>
+  <Association Name="FK_Object_Def_Attributes_Attribute_Defs">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Attribute_Def" Role="Attribute_Def" Multiplicity="1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def_Attribute" Role="Object_Def_Attributes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Attribute_Def">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Object_Def_Attributes">
+        <PropertyRef Name="Def_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Object_Def_Attributes_Documents">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Document" Role="Document" Multiplicity="1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def_Attribute" Role="Object_Def_Attributes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Document">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Object_Def_Attributes">
+        <PropertyRef Name="Document_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Object_Def_Attributes_Object_Defs">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def" Role="Object_Def" Multiplicity="1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def_Attribute" Role="Object_Def_Attributes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Object_Def">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Object_Def_Attributes">
+        <PropertyRef Name="Value" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Object_Def_Attributes_Workers">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Worker" Role="Worker" Multiplicity="1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def_Attribute" Role="Object_Def_Attributes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Worker">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Object_Def_Attributes">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Compare_Operations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int16" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Controls" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Control_Compare_Operations" FromRole="Compare_Operations" ToRole="Control" />
+  </EntityType>
+  <EntityType Name="Condition" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def">
+    <Property Name="Expression" Type="Int16" />
+    <Property Name="Left_Source" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Left_Attribute_Id" Type="Guid" />
+    <Property Name="Left_Attribute_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Left_Value" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Operation" Type="Int16" />
+    <Property Name="Right_Source" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Right_Attribute_Id" Type="Guid" />
+    <Property Name="Right_Attribute_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Right_Value" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Left_Param_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Right_Param_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Query" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def">
+    <Property Name="Document_Id" Type="Guid" />
+    <Property Name="Alias" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Query_Source" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def">
+    <Property Name="Document_Id" Type="Guid" />
+    <Property Name="Query_Id" Type="Guid" />
+    <Property Name="Alias" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Join_Type" Type="Int16" />
+  </EntityType>
+  <Association Name="FK_Control_Compare_Operations">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Compare_Operations" Role="Compare_Operations" Multiplicity="0..1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Control" Role="Control" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Compare_Operations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Control">
+        <PropertyRef Name="Compare_Operation" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Gate_Call_Activity" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Activity">
+    <Property Name="Gate_Id" Type="Guid" />
+    <Property Name="Process_Name" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="User_Name" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="User_Password" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Workflow_Gate_Refs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Gate_Call_Activity_Workflow_Gate_Refs" FromRole="Gate_Call_Activity" ToRole="Workflow_Gate_Ref" />
+  </EntityType>
+  <EntityType Name="Workflow_Gate_Ref" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def">
+    <Property Name="Service_Url" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="User_Name" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="User_Password" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Store_Location" Type="Int16" />
+    <Property Name="Store_Name" Type="Int16" />
+    <Property Name="Find_Type" Type="Int16" />
+    <Property Name="Subject_Name" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Gate_Call_Activities" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Gate_Call_Activity_Workflow_Gate_Refs" FromRole="Workflow_Gate_Ref" ToRole="Gate_Call_Activity" />
+    <NavigationProperty Name="Workflow_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Workflow_Gate_Ref_Workflow_Defs" FromRole="Workflow_Gate_Ref" ToRole="Workflow_Def" />
+  </EntityType>
+  <EntityType Name="Workflow_Gate" BaseType="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def">
+    <Property Name="Process_Id" Type="Guid" />
+    <NavigationProperty Name="Workflow_Defs" Relationship="Intersoft.CISSA.DataAccessLayer.Model.Data.FK_Workflow_Gate_Workflow_Defs" FromRole="Workflow_Gate" ToRole="Workflow_Def" />
+  </EntityType>
+  <Association Name="FK_Gate_Call_Activity_Workflow_Gate_Refs">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Gate_Ref" Role="Workflow_Gate_Ref" Multiplicity="0..1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Gate_Call_Activity" Role="Gate_Call_Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Workflow_Gate_Ref">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Gate_Call_Activity">
+        <PropertyRef Name="Gate_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Editors_Workflow_Processes">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Process" Role="Workflow_Process" Multiplicity="0..1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Editor" Role="Editor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Workflow_Process">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Editor">
+        <PropertyRef Name="Process_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Workflow_Gate_Ref_Workflow_Defs">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Def" Role="Workflow_Def" Multiplicity="1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Gate_Ref" Role="Workflow_Gate_Ref" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Workflow_Def">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Workflow_Gate_Ref">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Workflow_Gate_Workflow_Defs">
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Def" Role="Workflow_Def" Multiplicity="1" />
+    <End Type="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Gate" Role="Workflow_Gate" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Workflow_Def">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Workflow_Gate">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

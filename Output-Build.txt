@@ -1,0 +1,20 @@
+﻿1>------ Publish started: Project: SourcesAPI, Configuration: Debug Any CPU ------
+1>Transformed Web.config using C:\Users\Aziz.Nortozhiev\Desktop\Отчетность\xRoadLib\xRoadLib\SourcesAPI\Web.Debug.config into obj\Debug\TransformWebConfig\transformed\Web.config.
+1>Auto ConnectionString Transformed Areas\HelpPage\Views\Web.config into obj\Debug\CSAutoParameterize\transformed\Areas\HelpPage\Views\Web.config.
+1>Auto ConnectionString Transformed Views\Web.config into obj\Debug\CSAutoParameterize\transformed\Views\Web.config.
+1>Auto ConnectionString Transformed obj\Debug\TransformWebConfig\transformed\Web.config into obj\Debug\CSAutoParameterize\transformed\Web.config.
+1>Copying all files to temporary location below for package/publish:
+1>obj\Debug\Package\PackageTmp.
+1>Packaging into E:\deploy\SourcesAPI.zip.
+1>Updating file (C:\Users\Aziz.Nortozhiev\Desktop\Отчетность\xRoadLib\xRoadLib\SourcesAPI\obj\Debug\Package\PackageTmp\bin\SourcesAPI.dll).
+1>Updating file (C:\Users\Aziz.Nortozhiev\Desktop\Отчетность\xRoadLib\xRoadLib\SourcesAPI\obj\Debug\Package\PackageTmp\bin\SourcesAPI.pdb).
+1>Package "SourcesAPI.zip" is successfully created as single file at the following location:
+1>file:///E:/deploy
+1>To get the instructions on how to deploy the web package please visit the following link:
+1>https://go.microsoft.com/fwlink/?LinkId=124618
+1>Sample script for deploying this package is generated at the following location:
+1>E:\deploy\SourcesAPI.deploy.cmd
+1>For this sample script, you can change the deploy parameters by changing the following file: 
+1>E:\deploy\SourcesAPI.SetParameters.xml
+========== Build: 0 succeeded, 0 failed, 1 up-to-date, 0 skipped ==========
+========== Publish: 1 succeeded, 0 failed, 0 skipped ==========

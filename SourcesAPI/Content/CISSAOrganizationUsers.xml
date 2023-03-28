@@ -1,0 +1,302 @@
+<root>
+	<organization>
+		<name>УСР Первомайского района</name>
+		<Id>{34DDCAF2-EB08-48E7-894A-29C929D62C83}</Id>
+		<SystemUserId>{E1DD07B9-B93F-40FD-A26A-715DFF245176}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Октябрьского района</name>
+		<Id>{17C0AC69-2247-41E8-B086-54599FE11CED}</Id>
+		<SystemUserId>{5DF85C41-46D1-409F-94F4-6AEB5C05A79D}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Свердловского района</name>
+		<Id>{0BADBCA1-ADD3-4B74-9A95-60F2EED92118}</Id>
+		<SystemUserId>{1ADED1F9-057D-444E-9D07-53BD046DB9AE}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Ленинского района</name>
+		<Id>{2AB93962-2A1F-42D4-9E70-78931B9A413D}</Id>
+		<SystemUserId>{3B034048-8658-4E68-B5E5-70E380041E2B}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Атбашинского района</name>
+		<Id>{4C60A2A2-73B4-4EA4-A6D0-E2B41370C7FC}</Id>
+		<SystemUserId>{58463D9E-C18C-49E0-8981-6A911F0E2E24}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Акталинского района</name>
+		<Id>{CB788BA9-8F94-4317-A655-B4F5527F3A4B}</Id>
+		<SystemUserId>{A9EAF2CD-88CB-44EE-A4F4-6EBAA3821847}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Жумгальского района</name>
+		<Id>{52568E10-0210-4B09-B106-9E14520E26F1}</Id>
+		<SystemUserId>{C444E7D0-B35C-4CE4-955A-0FFBC6C5FBC5}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Кочкорского района</name>
+		<Id>{B631F3B0-1656-49C5-9152-0252F304D29B}</Id>
+		<SystemUserId>{58E58AC4-C5F5-4D60-A59D-1C7940825706}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Нарынского района</name>
+		<Id>{A6B9B397-81CF-43ED-A17B-6A13C110A678}</Id>
+		<SystemUserId>{5842CA52-F7BF-4D11-9343-0E57989ADAE6}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР города Нарын</name>
+		<Id>{0A409F28-4A73-4CED-B368-10C6BE53419F}</Id>
+		<SystemUserId>{9FF1D72E-1369-455B-B03E-EA391AFB7111}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Ак-Сууйского района</name>
+		<Id>{D2EDB83E-7EE5-4B5A-82A6-E9E49DD1E3B3}</Id>
+		<SystemUserId>{34D72E95-5C6D-4DEF-8796-CC72595DCCE3}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Жети-Огузского района</name>
+		<Id>{AAD91EAB-297F-40C8-B592-68573495EEC0}</Id>
+		<SystemUserId>{24A3EEBC-4179-4FA7-9F78-9C3DACC6FAB5}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Иссык-Кульского района</name>
+		<Id>{416366EE-580B-4E57-8641-0D90A2F5AB73}</Id>
+		<SystemUserId>{B4B67B13-37E8-4E17-9E26-5EBD7043AB34}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Тюпского района</name>
+		<Id>{5B438995-2070-46A8-9377-E922F0D64E4F}</Id>
+		<SystemUserId>{BD8E8CE4-078E-4931-B91C-77813413E78D}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Тонского района</name>
+		<Id>{55F9FFBF-B789-4002-BD64-B04163806897}</Id>
+		<SystemUserId>{074BC805-022B-4624-90D0-83FAF9A7180E}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР города Балыкчы</name>
+		<Id>{2FEA2DF5-24F6-4E53-BF6C-22604AC014C1}</Id>
+		<SystemUserId>{41F4FDC7-18BB-42D3-9B37-6704CE3C98C7}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР города Каракол</name>
+		<Id>{43842F64-7BB7-45EC-930B-54AD19186382}</Id>
+		<SystemUserId>{0FAD6BF6-1DC6-4E10-B732-045DBE471DFF}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Бакай-Атинского района</name>
+		<Id>{C285A1F2-2114-4752-A626-A235C6D6F2B1}</Id>
+		<SystemUserId>{26B4CCC1-8382-4483-9271-61525F5C62C9}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Кара-Буринского района</name>
+		<Id>{17A6CA38-8B7B-4F5C-973B-18F31646CC03}</Id>
+		<SystemUserId>{ED6C24B1-68EA-45D8-B90D-14BA8B527253}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Манасского района</name>
+		<Id>{376FF578-372D-43A4-818E-31BC64327BEF}</Id>
+		<SystemUserId>{82B7024B-2899-490D-931B-E690706D0793}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Таласского района</name>
+		<Id>{1E5868C3-B522-4DBF-BC8F-02C75A899C0F}</Id>
+		<SystemUserId>{D8B5EED7-6F28-437F-8904-4679200A47E5}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР города Талас</name>
+		<Id>{02992EB8-E107-408E-954E-E322A73B433A}</Id>
+		<SystemUserId>{1479A0E3-7686-451B-9C08-94D19441EFAA}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР города Баткен</name>
+		<Id>{20745158-EAE3-434C-BDF5-5F893C8963ED}</Id>
+		<SystemUserId>{795B639B-296F-4D07-A747-1D746E56FA5A}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Баткенского района</name>
+		<Id>{0BCED873-4950-449A-98E6-69C44F64D70C}</Id>
+		<SystemUserId>{E51A9C5F-33E4-44A7-8BA5-5A10ACD463AD}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Кадамжайского района</name>
+		<Id>{E062B2A3-42C4-4619-B086-705E6C5367D3}</Id>
+		<SystemUserId>{55F0A7E1-23D2-44F2-AEF3-F5A84740ABE1}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Лейлекского района</name>
+		<Id>{F6CECF6A-2D5D-44C1-BC2F-29A836965531}</Id>
+		<SystemUserId>{1BD41E42-1F3C-468F-9D03-67C28262A7D5}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР города Кизыл-Кия</name>
+		<Id>{DDE31E57-4454-44EE-AFA9-80227E3C8620}</Id>
+		<SystemUserId>{F4291D07-896D-40D0-BAB3-477699D6E08C}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР города Сулюкта</name>
+		<Id>{E883C8F3-5E3C-4086-A078-91FD22E6550A}</Id>
+		<SystemUserId>{796CAFFC-F348-4705-B163-41C694477A8C}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Аламудунского района</name>
+		<Id>{822E0311-F790-474D-BC97-E67CE8D14009}</Id>
+		<SystemUserId>{565CBA9D-56CC-47A7-9E85-A9F4722119D7}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Ысык-Атинского района</name>
+		<Id>{BEC45992-2D1C-4488-A260-FC7C5511F619}</Id>
+		<SystemUserId>{67BA836A-6259-4991-83D4-281FAE2D662A}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Московского района</name>
+		<Id>{CA59DB1A-4AB2-4CB2-90C6-BF323E82E44A}</Id>
+		<SystemUserId>{CA59DB1A-4AB2-4CB2-90C6-BF323E82E44A}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Жайылского района</name>
+		<Id>{6612E6F7-BA2B-4E33-ADB9-FA0B14705E27}</Id>
+		<SystemUserId>{3E233250-BE76-4444-BA42-112F509E38D0}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Сокулукского района</name>
+		<Id>{C139D4DE-9F64-46D2-A908-1C477B78ECCD}</Id>
+		<SystemUserId>{0DE746F1-08BF-442F-BCF8-E1E0F212E7C2}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Кеминского района</name>
+		<Id>{78D008DF-F7E8-4F99-92A1-42E7AE6E34C3}</Id>
+		<SystemUserId>{74EDAD85-9E45-493A-B37A-A07A21FE9ED5}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Чуйского района</name>
+		<Id>{AA466C30-47A6-4252-989D-F44C91A120A5}</Id>
+		<SystemUserId>{6C13F9FE-A2B0-4E61-996F-1E4352C2FA67}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР города Токмок</name>
+		<Id>{CAE58A37-FBE8-49AA-8E09-B167F871A5E8}</Id>
+		<SystemUserId>{3C45B707-7C9A-4B7B-8A98-CD9D95450BB7}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Панфиловского района</name>
+		<Id>{72075FFB-371D-4C7B-8A5A-993E1C51CBFF}</Id>
+		<SystemUserId>{545EE2C5-A114-4877-994F-3595C10D481B}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР города Джалал-Абад</name>
+		<Id>{D319DC07-E7F7-4997-AFCD-17CEAD707B7F}</Id>
+		<SystemUserId>{751AF735-697F-4533-9C13-B085E5B9E23A}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Ноокенского района</name>
+		<Id>{A3E2A017-96F2-47C6-AF09-6FA4287E6953}</Id>
+		<SystemUserId>{F942AAB7-FA70-4113-9DD6-E59FB7834063}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Сузакского района</name>
+		<Id>{9375DF49-1B41-4EFD-BB79-0FC2A86ABED6}</Id>
+		<SystemUserId>{8F42962E-1A94-4E9C-85F3-1048CB9997E0}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР города Кара-Куль</name>
+		<Id>{CB86E66E-8A41-4D92-9FD6-9BCF7E61F543}</Id>
+		<SystemUserId>{00DAF9EF-3CE9-46C0-8744-7C6AD00437AA}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР города Таш-Кумыр</name>
+		<Id>{8E3CA117-0956-4F67-A8EF-B8222DC0A21E}</Id>
+		<SystemUserId>{DDE004AF-B548-4C28-A6A7-9FF3C5D492E9}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Токтогульского района</name>
+		<Id>{F9D53DFB-0E18-44E6-A905-8B67F5751D37}</Id>
+		<SystemUserId>{903FD128-B066-466E-BD81-D9FC5B5E580B}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Базар-Коргонского района</name>
+		<Id>{A23770C6-2843-446E-8382-8C50AFD699E5}</Id>
+		<SystemUserId>{E4642FC5-4D99-4893-AD79-7B7B40C26B63}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР города Майлуу-Суу</name>
+		<Id>{EFA2A70A-D10E-4941-B1F8-AE5218E5AD29}</Id>
+		<SystemUserId>{5B0C4694-6AB1-4E2D-B8F1-1C12EBFF412A}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР города Кок-Жангак</name>
+		<Id>{8CAC9C70-D770-4AAB-8B0B-E1C432F6985A}</Id>
+		<SystemUserId>{64D4D457-5AB2-4B7E-AC1E-09FC2055D3B6}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Тогуз-Тороузского района</name>
+		<Id>{BF0A92AD-140E-4582-AB9F-DB304890C35A}</Id>
+		<SystemUserId>{14776890-1688-4320-8E34-47555CCA87C5}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Ала-Букинскоко района</name>
+		<Id>{915D0BEB-53C1-440F-9CBA-00612369FEFC}</Id>
+		<SystemUserId>{C06266B6-7041-4AC1-B48C-4BC775DA652E}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Аксыйский района</name>
+		<Id>{A5B70AEE-4E8B-4194-864D-F58E5BAB76E7}</Id>
+		<SystemUserId>{630CBF6B-0045-4CB8-B17F-A04FD6FBFDD1}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР города Ош</name>
+		<Id>{A99E469A-E8D4-4139-B89A-CE4AF6AA0733}</Id>
+		<SystemUserId>{79A100D1-C41C-43C6-B777-B818686EFF9E}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Чаткалского района</name>
+		<Id>{5026031D-2BC9-4A24-8DB5-30C7DD992352}</Id>
+		<SystemUserId>{F8CDA99D-7CC1-444F-AF15-B1B4FE00ECBA}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Ноокатского района</name>
+		<Id>{E0AF1DF7-AA64-45DD-873E-510CD413AD35}</Id>
+		<SystemUserId>{CAD6D0E8-2938-481F-B3C9-1F8B2FDC1711}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Араванского района</name>
+		<Id>{C3C63817-FFB3-4905-BC70-8C3A3DBB67DC}</Id>
+		<SystemUserId>{529114EB-90D1-4CA3-B6FA-88D106622AED}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Алайского района</name>
+		<Id>{5903E184-79E4-4630-AD91-FD488B84B832}</Id>
+		<SystemUserId>{2773CD4D-8D63-4CF5-948C-2FAC2D0B7C43}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Карасуйского района</name>
+		<Id>{3A305A9A-D30E-4C38-9E41-09DF993A658E}</Id>
+		<SystemUserId>{AED89167-F770-42BC-BA66-CE79341E09AB}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Чон-Алайского района</name>
+		<Id>{8A7D0C1C-A4A7-4582-8D65-8023CDB273E1}</Id>
+		<SystemUserId>{BF133CD9-3E85-4942-874C-18FB777C4CDD}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Узгенского района</name>
+		<Id>{B0B7490F-E48D-4DC7-9548-0505D73C858F}</Id>
+		<SystemUserId>{D43AE2FC-10CD-4A04-91D0-1183283FCDD8}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР города Узген</name>
+		<Id>{2F8C280E-6C97-41D5-B24F-7D0DF4FF4C0E}</Id>
+		<SystemUserId>{989AB7C1-0EE6-42B6-89A7-8202A40DDD52}</SystemUserId>
+	</organization>
+	<organization>
+		<name>УСР Кара-Кульджинского района</name>
+		<Id>{2A0481C0-FB12-4048-9153-CB7AE997A26C}</Id>
+		<SystemUserId>{BB0D910B-2ECA-4B81-967A-8D651223B22A}</SystemUserId>
+	</organization>
+  <organization>
+    <name>Интерсофт</name>
+    <Id>{063FC105-DC9B-48CE-9A4E-91384C93AE8F}</Id>
+    <SystemUserId>{A47A1306-7076-4539-9F1B-51255BE94238}</SystemUserId>
+  </organization>
+</root>

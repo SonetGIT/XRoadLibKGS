@@ -1,0 +1,903 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="cissa_imeModelStoreContainer" CdmEntityContainer="cissaEntities">
+    <EntitySetMapping Name="Blob_Attributes">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Blob_Attribute">
+        <MappingFragment StoreEntitySet="Blob_Attributes">
+          <ScalarProperty Name="Document_Id" ColumnName="Document_Id" />
+          <ScalarProperty Name="Def_Id" ColumnName="Def_Id" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Expired" ColumnName="Expired" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="FileExtention" ColumnName="FileExtention" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Boolean_Attributes">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Boolean_Attribute">
+        <MappingFragment StoreEntitySet="Boolean_Attributes">
+          <ScalarProperty Name="Document_Id" ColumnName="Document_Id" />
+          <ScalarProperty Name="Def_Id" ColumnName="Def_Id" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Expired" ColumnName="Expired" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Currency_Attributes">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Currency_Attribute">
+        <MappingFragment StoreEntitySet="Currency_Attributes">
+          <ScalarProperty Name="Document_Id" ColumnName="Document_Id" />
+          <ScalarProperty Name="Def_Id" ColumnName="Def_Id" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Expired" ColumnName="Expired" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Data_Types">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Data_Type">
+        <MappingFragment StoreEntitySet="Data_Types">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Date_Time_Attributes">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Date_Time_Attribute">
+        <MappingFragment StoreEntitySet="Date_Time_Attributes">
+          <ScalarProperty Name="Document_Id" ColumnName="Document_Id" />
+          <ScalarProperty Name="Def_Id" ColumnName="Def_Id" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Expired" ColumnName="Expired" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Document_Attributes">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Attribute">
+        <MappingFragment StoreEntitySet="Document_Attributes">
+          <ScalarProperty Name="Document_Id" ColumnName="Document_Id" />
+          <ScalarProperty Name="Def_Id" ColumnName="Def_Id" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Expired" ColumnName="Expired" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Document_States">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_State">
+        <MappingFragment StoreEntitySet="Document_States">
+          <ScalarProperty Name="Prev_Document_State_Id" ColumnName="Prev_Document_State_Id" />
+          <ScalarProperty Name="State_Type_Id" ColumnName="State_Type_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Document_Id" ColumnName="Document_Id" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Worker_Id" ColumnName="Worker_Id" />
+          <ScalarProperty Name="Expired" ColumnName="Expired" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DocumentActivityTypes">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.DocumentActivityType">
+        <MappingFragment StoreEntitySet="DocumentActivityType">
+          <ScalarProperty Name="DocActivityTypeId" ColumnName="DocActivityTypeId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DocumentList_Attributes">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.DocumentList_Attribute">
+        <MappingFragment StoreEntitySet="DocumentList_Attributes">
+          <ScalarProperty Name="Document_Id" ColumnName="Document_Id" />
+          <ScalarProperty Name="Def_Id" ColumnName="Def_Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Expired" ColumnName="Expired" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Documents">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Document">
+        <MappingFragment StoreEntitySet="Documents">
+          <ScalarProperty Name="Last_Modified" ColumnName="Last_Modified" />
+          <ScalarProperty Name="Org_Position_Id" ColumnName="Org_Position_Id" />
+          <ScalarProperty Name="Organization_Id" ColumnName="Organization_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Def_Id" ColumnName="Def_Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Enum_Attributes">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Enum_Attribute">
+        <MappingFragment StoreEntitySet="Enum_Attributes">
+          <ScalarProperty Name="Document_Id" ColumnName="Document_Id" />
+          <ScalarProperty Name="Def_Id" ColumnName="Def_Id" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Expired" ColumnName="Expired" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Float_Attributes">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Float_Attribute">
+        <MappingFragment StoreEntitySet="Float_Attributes">
+          <ScalarProperty Name="Document_Id" ColumnName="Document_Id" />
+          <ScalarProperty Name="Def_Id" ColumnName="Def_Id" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Expired" ColumnName="Expired" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Image_Attributes">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Image_Attribute">
+        <MappingFragment StoreEntitySet="Image_Attributes">
+          <ScalarProperty Name="File_Name" ColumnName="File_Name" />
+          <ScalarProperty Name="Document_Id" ColumnName="Document_Id" />
+          <ScalarProperty Name="Def_Id" ColumnName="Def_Id" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Expired" ColumnName="Expired" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Int_Attributes">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Int_Attribute">
+        <MappingFragment StoreEntitySet="Int_Attributes">
+          <ScalarProperty Name="Document_Id" ColumnName="Document_Id" />
+          <ScalarProperty Name="Def_Id" ColumnName="Def_Id" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Expired" ColumnName="Expired" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Layout_Types">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Layout_Type">
+        <MappingFragment StoreEntitySet="Layout_Types">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Object_Defs">
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def)">
+        <MappingFragment StoreEntitySet="Object_Defs">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Order_Index" ColumnName="Order_Index" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Full_Name" ColumnName="Full_Name" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Parent_Id" ColumnName="Parent_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Enum_Def)">
+        <MappingFragment StoreEntitySet="Enum_Defs">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Folder_Def)">
+        <MappingFragment StoreEntitySet="Folder_Defs">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Def)">
+        <MappingFragment StoreEntitySet="Document_Defs">
+          <ScalarProperty Name="Def_Data" ColumnName="Def_Data" />
+          <ScalarProperty Name="Create_Permission_Id" ColumnName="Create_Permission_Id" />
+          <ScalarProperty Name="Select_Permission_Id" ColumnName="Select_Permission_Id" />
+          <ScalarProperty Name="Delete_Permission_Id" ColumnName="Delete_Permission_Id" />
+          <ScalarProperty Name="Update_Permission_Id" ColumnName="Update_Permission_Id" />
+          <ScalarProperty Name="Is_Public" ColumnName="Is_Public" />
+          <ScalarProperty Name="Is_Inline" ColumnName="Is_Inline" />
+          <ScalarProperty Name="WithHistory" ColumnName="WithHistory" />
+          <ScalarProperty Name="Ancestor_Id" ColumnName="Ancestor_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Attribute_Def)">
+        <MappingFragment StoreEntitySet="Attribute_Defs">
+          <ScalarProperty Name="Org_Type_Id" ColumnName="Org_Type_Id" />
+          <ScalarProperty Name="BlobMaxSizeBytes" ColumnName="BlobMaxSizeBytes" />
+          <ScalarProperty Name="BlobMaxWidth" ColumnName="BlobMaxWidth" />
+          <ScalarProperty Name="BlobIsImage" ColumnName="BlobIsImage" />
+          <ScalarProperty Name="BlobMaxHeight" ColumnName="BlobMaxHeight" />
+          <ScalarProperty Name="CalculateScript" ColumnName="CalculateScript" />
+          <ScalarProperty Name="Default_Value" ColumnName="Default_Value" />
+          <ScalarProperty Name="Max_Length" ColumnName="Max_Length" />
+          <ScalarProperty Name="Min_Value" ColumnName="Min_Value" />
+          <ScalarProperty Name="Max_Value" ColumnName="Max_Value" />
+          <ScalarProperty Name="Is_Unique" ColumnName="Is_Unique" />
+          <ScalarProperty Name="Is_Not_Null" ColumnName="Is_Not_Null" />
+          <ScalarProperty Name="Type_Id" ColumnName="Type_Id" />
+          <ScalarProperty Name="Document_Id" ColumnName="Document_Id" />
+          <ScalarProperty Name="Enum_Id" ColumnName="Enum_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Project_Item)">
+        <MappingFragment StoreEntitySet="Project_Items">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Project_Folder)">
+        <MappingFragment StoreEntitySet="Project_Folders">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Project)">
+        <MappingFragment StoreEntitySet="Projects">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Def)">
+        <MappingFragment StoreEntitySet="Workflow_Defs">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Activity)">
+        <MappingFragment StoreEntitySet="Workflow_Activities">
+          <ScalarProperty Name="Type_Id" ColumnName="Type_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Finish_Activity)">
+        <MappingFragment StoreEntitySet="Finish_Activities">
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Form_Id" ColumnName="Form_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Activity_Link)">
+        <MappingFragment StoreEntitySet="Activity_Links">
+          <ScalarProperty Name="Is_Exception_Handler" ColumnName="Is_Exception_Handler" />
+          <ScalarProperty Name="User_Action_Id" ColumnName="User_Action_Id" />
+          <ScalarProperty Name="Condition" ColumnName="Condition" />
+          <ScalarProperty Name="Target_Id" ColumnName="Target_Id" />
+          <ScalarProperty Name="Source_Id" ColumnName="Source_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Process_Call_Activity)">
+        <MappingFragment StoreEntitySet="Process_Call_Activities">
+          <ScalarProperty Name="Process_Id" ColumnName="Process_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Process)">
+        <MappingFragment StoreEntitySet="Workflow_Processes">
+          <ScalarProperty Name="Graph_data" ColumnName="Graph_data" />
+          <ScalarProperty Name="Script" ColumnName="Script" />
+          <ScalarProperty Name="Diagram_Data" ColumnName="Diagram_Data" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Control)">
+        <MappingFragment StoreEntitySet="Controls">
+          <ScalarProperty Name="Compare_Operation" ColumnName="Compare_Operation" />
+          <ScalarProperty Name="Not_Null" ColumnName="Not_Null" />
+          <ScalarProperty Name="Sort_Type" ColumnName="Sort_Type" />
+          <ScalarProperty Name="Read_Only" ColumnName="Read_Only" />
+          <ScalarProperty Name="Invisible" ColumnName="Invisible" />
+          <ScalarProperty Name="VisibleInListView" ColumnName="VisibleInListView" />
+          <ScalarProperty Name="Style" ColumnName="Style" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Button)">
+        <MappingFragment StoreEntitySet="Buttons">
+          <ScalarProperty Name="Process_Id" ColumnName="Process_Id" />
+          <ScalarProperty Name="User_Action_Id" ColumnName="User_Action_Id" />
+          <ScalarProperty Name="Button_Type" ColumnName="Button_Type" />
+          <ScalarProperty Name="Action_Type" ColumnName="Action_Type" />
+          <ScalarProperty Name="Action_Id" ColumnName="Action_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Combo_Box)">
+        <MappingFragment StoreEntitySet="Combo_Boxes">
+          <ScalarProperty Name="Detail_Attribute_Name" ColumnName="Detail_Attribute_Name" />
+          <ScalarProperty Name="Detail_Attribute_Id" ColumnName="Detail_Attribute_Id" />
+          <ScalarProperty Name="Attribute_Name" ColumnName="Attribute_Name" />
+          <ScalarProperty Name="Rows" ColumnName="Rows" />
+          <ScalarProperty Name="Is_Radio" ColumnName="Is_Radio" />
+          <ScalarProperty Name="Attribute_Id" ColumnName="Attribute_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Form)">
+        <MappingFragment StoreEntitySet="Forms">
+          <ScalarProperty Name="Ban_Edit" ColumnName="Ban_Edit" />
+          <ScalarProperty Name="Can_Delete" ColumnName="Can_Delete" />
+          <ScalarProperty Name="Def_Data" ColumnName="Def_Data" />
+          <ScalarProperty Name="Script" ColumnName="Script" />
+          <ScalarProperty Name="Layout_Id" ColumnName="Layout_Id" />
+          <ScalarProperty Name="Document_Id" ColumnName="Document_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.DocumentList_Form)">
+        <MappingFragment StoreEntitySet="DocumentList_Forms">
+          <ScalarProperty Name="Attribute_Name" ColumnName="Attribute_Name" />
+          <ScalarProperty Name="Form_Attribute_Id" ColumnName="Form_Attribute_Id" />
+          <ScalarProperty Name="Form_Id" ColumnName="Form_Id" />
+          <ScalarProperty Name="Attribute_Id" ColumnName="Attribute_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Presentation_Activity)">
+        <MappingFragment StoreEntitySet="Presentation_Activities">
+          <ScalarProperty Name="Is_Exception" ColumnName="Is_Exception" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Form_Id" ColumnName="Form_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Editor)">
+        <MappingFragment StoreEntitySet="Editors">
+          <ScalarProperty Name="Process_Id" ColumnName="Process_Id" />
+          <ScalarProperty Name="Format" ColumnName="Format" />
+          <ScalarProperty Name="Edit_Mask" ColumnName="Edit_Mask" />
+          <ScalarProperty Name="Attribute_Name" ColumnName="Attribute_Name" />
+          <ScalarProperty Name="Cols" ColumnName="Cols" />
+          <ScalarProperty Name="Rows" ColumnName="Rows" />
+          <ScalarProperty Name="Attribute_Id" ColumnName="Attribute_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Menu)">
+        <MappingFragment StoreEntitySet="Menus">
+          <ScalarProperty Name="Def_Data" ColumnName="Def_Data" />
+          <ScalarProperty Name="State_Type_Id" ColumnName="State_Type_Id" />
+          <ScalarProperty Name="Process_Id" ColumnName="Process_Id" />
+          <ScalarProperty Name="Form_Id" ColumnName="Form_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Report)">
+        <MappingFragment StoreEntitySet="Reports">
+          <ScalarProperty Name="Document_Id" ColumnName="Document_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Report_Editor)">
+        <MappingFragment StoreEntitySet="Report_Editors">
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Summary_Id" ColumnName="Summary_Id" />
+          <ScalarProperty Name="Attribute_Id" ColumnName="Attribute_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.DocumentControl)">
+        <MappingFragment StoreEntitySet="DocumentControl">
+          <ScalarProperty Name="Layout_Id" ColumnName="Layout_Id" />
+          <ScalarProperty Name="Hidden_Id" ColumnName="Hidden_Id" />
+          <ScalarProperty Name="Attribute_Name" ColumnName="Attribute_Name" />
+          <ScalarProperty Name="Form_Id" ColumnName="Form_Id" />
+          <ScalarProperty Name="Attribute_Id" ColumnName="Attribute_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.DynamicDocumentList)">
+        <MappingFragment StoreEntitySet="DynamicDocumentList">
+          <ScalarProperty Name="ScriptId" ColumnName="ScriptId" />
+          <ScalarProperty Name="Form_Id" ColumnName="Form_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Panel)">
+        <MappingFragment StoreEntitySet="Panels">
+          <ScalarProperty Name="Layout_Id" ColumnName="Layout_Id" />
+          <ScalarProperty Name="Is_Horizontal" ColumnName="Is_Horizontal" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Grid)">
+        <MappingFragment StoreEntitySet="Grids">
+          <ScalarProperty Name="Is_Detail" ColumnName="Is_Detail" />
+          <ScalarProperty Name="Document_Id" ColumnName="Document_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Radio_Item)">
+        <MappingFragment StoreEntitySet="Radio_Items">
+          <ScalarProperty Name="Enum_Id" ColumnName="Enum_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Report_Section)">
+        <MappingFragment StoreEntitySet="Report_Sections">
+          <ScalarProperty Name="Type_Id" ColumnName="Type_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Table_Column)">
+        <MappingFragment StoreEntitySet="Table_Columns">
+          <ScalarProperty Name="Attribute_Name" ColumnName="Attribute_Name" />
+          <ScalarProperty Name="Attribute_Id" ColumnName="Attribute_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Subject)">
+        <MappingFragment StoreEntitySet="Subjects">
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Org_Position)">
+        <MappingFragment StoreEntitySet="Org_Positions">
+          <ScalarProperty Name="Title_Id" ColumnName="Title_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Org_Unit)">
+        <MappingFragment StoreEntitySet="Org_Units">
+          <ScalarProperty Name="INN" ColumnName="INN" />
+          <ScalarProperty Name="Type_Id" ColumnName="Type_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Person)">
+        <MappingFragment StoreEntitySet="Persons">
+          <ScalarProperty Name="INN" ColumnName="INN" />
+          <ScalarProperty Name="Passport_Org" ColumnName="Passport_Org" />
+          <ScalarProperty Name="Passport_Date" ColumnName="Passport_Date" />
+          <ScalarProperty Name="Passport_No" ColumnName="Passport_No" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="Birth_Date" ColumnName="Birth_Date" />
+          <ScalarProperty Name="Middle_Name" ColumnName="Middle_Name" />
+          <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+          <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Worker)">
+        <MappingFragment StoreEntitySet="Workers">
+          <ScalarProperty Name="Language_Id" ColumnName="Language_Id" />
+          <ScalarProperty Name="User_Password" ColumnName="User_Password" />
+          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+          <ScalarProperty Name="OrgPosition_Id" ColumnName="OrgPosition_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Security_Object)">
+        <MappingFragment StoreEntitySet="Security_Objects">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Permission)">
+        <MappingFragment StoreEntitySet="Permissions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Role)">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Activity)">
+        <MappingFragment StoreEntitySet="Document_Activities">
+          <ScalarProperty Name="DocActivityTypeId" ColumnName="DocActivityTypeId" />
+          <ScalarProperty Name="Document_Id" ColumnName="Document_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Table_Form)">
+        <MappingFragment StoreEntitySet="Table_Forms">
+          <ScalarProperty Name="Rows" ColumnName="Rows" />
+          <ScalarProperty Name="Can_Delete" ColumnName="Can_Delete" />
+          <ScalarProperty Name="Can_Edit" ColumnName="Can_Edit" />
+          <ScalarProperty Name="Can_Add_New" ColumnName="Can_Add_New" />
+          <ScalarProperty Name="Add_New_Permission_Id" ColumnName="Add_New_Permission_Id" />
+          <ScalarProperty Name="Open_Permission_Id" ColumnName="Open_Permission_Id" />
+          <ScalarProperty Name="Def_Data" ColumnName="Def_Data" />
+          <ScalarProperty Name="Script" ColumnName="Script" />
+          <ScalarProperty Name="Filter_Form_Id" ColumnName="Filter_Form_Id" />
+          <ScalarProperty Name="Form_Id" ColumnName="Form_Id" />
+          <ScalarProperty Name="Document_Id" ColumnName="Document_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Script_Activity)">
+        <MappingFragment StoreEntitySet="Script_Activities">
+          <ScalarProperty Name="Script" ColumnName="Script" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Start_Activity)">
+        <MappingFragment StoreEntitySet="Start_Activities">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Image)">
+        <MappingFragment StoreEntitySet="Images">
+          <ScalarProperty Name="Attribute_Id" ColumnName="Attribute_Id" />
+          <ScalarProperty Name="Image_Data" ColumnName="Image_Data" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Text)">
+        <MappingFragment StoreEntitySet="Texts">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Report_Text)">
+        <MappingFragment StoreEntitySet="Report_Texts">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Report_Band)">
+        <MappingFragment StoreEntitySet="Report_Bands">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Rule)">
+        <MappingFragment StoreEntitySet="Rules">
+          <ScalarProperty Name="Script" ColumnName="Script" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.User_Action)">
+        <MappingFragment StoreEntitySet="User_Actions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Document_State_Activity)">
+        <MappingFragment StoreEntitySet="Document_State_Activities">
+          <ScalarProperty Name="State_Type_Id" ColumnName="State_Type_Id" />
+          <ScalarProperty Name="State_Name" ColumnName="State_Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Table_Report)">
+        <MappingFragment StoreEntitySet="Table_Reports">
+          <ScalarProperty Name="Def_Data" ColumnName="Def_Data" />
+          <ScalarProperty Name="Is_Portret" ColumnName="Is_Portret" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Enum_Item)">
+        <MappingFragment StoreEntitySet="Enum_Items">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Organization)">
+        <MappingFragment StoreEntitySet="Organizations">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Type_Id" ColumnName="Type_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Document_State_Type)">
+        <MappingFragment StoreEntitySet="Document_State_Types">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Read_Only" ColumnName="Read_Only" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Org_Model)">
+        <MappingFragment StoreEntitySet="Org_Models">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Is_Active" ColumnName="Is_Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Script)">
+        <MappingFragment StoreEntitySet="Scripts">
+          <ScalarProperty Name="Script_Text" ColumnName="Script_Text" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Route)">
+        <MappingFragment StoreEntitySet="Document_Routes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Document_Def_Id" ColumnName="Document_Def_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Route_Transit)">
+        <MappingFragment StoreEntitySet="Document_Route_Transits">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Source_State_Id" ColumnName="Source_State_Id" />
+          <ScalarProperty Name="Target_State_Id" ColumnName="Target_State_Id" />
+          <ScalarProperty Name="Permission_Id" ColumnName="Permission_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Tab_Control)">
+        <MappingFragment StoreEntitySet="Tab_Controls">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Condition)">
+        <MappingFragment StoreEntitySet="Conditions">
+          <ScalarProperty Name="Right_Param_Name" ColumnName="Right_Param_Name" />
+          <ScalarProperty Name="Left_Param_Name" ColumnName="Left_Param_Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Expression" ColumnName="Expression" />
+          <ScalarProperty Name="Left_Source" ColumnName="Left_Source" />
+          <ScalarProperty Name="Left_Attribute_Id" ColumnName="Left_Attribute_Id" />
+          <ScalarProperty Name="Left_Attribute_Name" ColumnName="Left_Attribute_Name" />
+          <ScalarProperty Name="Left_Value" ColumnName="Left_Value" />
+          <ScalarProperty Name="Operation" ColumnName="Operation" />
+          <ScalarProperty Name="Right_Source" ColumnName="Right_Source" />
+          <ScalarProperty Name="Right_Attribute_Id" ColumnName="Right_Attribute_Id" />
+          <ScalarProperty Name="Right_Attribute_Name" ColumnName="Right_Attribute_Name" />
+          <ScalarProperty Name="Right_Value" ColumnName="Right_Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Query_Source)">
+        <MappingFragment StoreEntitySet="Query_Sources">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Document_Id" ColumnName="Document_Id" />
+          <ScalarProperty Name="Query_Id" ColumnName="Query_Id" />
+          <ScalarProperty Name="Alias" ColumnName="Alias" />
+          <ScalarProperty Name="Join_Type" ColumnName="Join_Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Query)">
+        <MappingFragment StoreEntitySet="Queries">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Document_Id" ColumnName="Document_Id" />
+          <ScalarProperty Name="Alias" ColumnName="Alias" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Gate_Call_Activity)">
+        <MappingFragment StoreEntitySet="Gate_Call_Activities">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Gate_Id" ColumnName="Gate_Id" />
+          <ScalarProperty Name="Process_Name" ColumnName="Process_Name" />
+          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+          <ScalarProperty Name="User_Password" ColumnName="User_Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Gate)">
+        <MappingFragment StoreEntitySet="Workflow_Gates">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Process_Id" ColumnName="Process_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Gate_Ref)">
+        <MappingFragment StoreEntitySet="Workflow_Gate_Refs">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Service_Url" ColumnName="Service_Url" />
+          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+          <ScalarProperty Name="User_Password" ColumnName="User_Password" />
+          <ScalarProperty Name="Store_Location" ColumnName="Store_Location" />
+          <ScalarProperty Name="Store_Name" ColumnName="Store_Name" />
+          <ScalarProperty Name="Find_Type" ColumnName="Find_Type" />
+          <ScalarProperty Name="Subject_Name" ColumnName="Subject_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Org_Unit_Types">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Org_Unit_Type">
+        <MappingFragment StoreEntitySet="Org_Unit_Types">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Permission_Defs">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Permission_Def">
+        <MappingFragment StoreEntitySet="Permission_Defs">
+          <ScalarProperty Name="Access_Type" ColumnName="Access_Type" />
+          <ScalarProperty Name="Is_Disabled" ColumnName="Is_Disabled" />
+          <ScalarProperty Name="Def_Id" ColumnName="Def_Id" />
+          <ScalarProperty Name="Permission_Id" ColumnName="Permission_Id" />
+          <ScalarProperty Name="AllowInsert" ColumnName="AllowInsert" />
+          <ScalarProperty Name="AllowUpdate" ColumnName="AllowUpdate" />
+          <ScalarProperty Name="AllowDelete" ColumnName="AllowDelete" />
+          <ScalarProperty Name="AllowSelect" ColumnName="AllowSelect" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Report_Section_Types">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Report_Section_Type">
+        <MappingFragment StoreEntitySet="Report_Section_Types">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Report_Summary_Types">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Report_Summary_Type">
+        <MappingFragment StoreEntitySet="Report_Summary_Types">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Text_Attributes">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Text_Attribute">
+        <MappingFragment StoreEntitySet="Text_Attributes">
+          <ScalarProperty Name="Upper_Value" ColumnName="Upper_Value" />
+          <ScalarProperty Name="Document_Id" ColumnName="Document_Id" />
+          <ScalarProperty Name="Def_Id" ColumnName="Def_Id" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Expired" ColumnName="Expired" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Titles">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Title">
+        <MappingFragment StoreEntitySet="Titles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="Org_Positions_Roles" TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Org_Positions_Roles" StoreEntitySet="Org_Positions_Roles">
+      <EndProperty Name="Role">
+        <ScalarProperty Name="Id" ColumnName="Role_Id" />
+      </EndProperty>
+      <EndProperty Name="Org_Position">
+        <ScalarProperty Name="Id" ColumnName="Org_Position_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Org_Units_Roles" TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Org_Units_Roles" StoreEntitySet="Org_Units_Roles">
+      <EndProperty Name="Role">
+        <ScalarProperty Name="Id" ColumnName="Role_Id" />
+      </EndProperty>
+      <EndProperty Name="Org_Unit">
+        <ScalarProperty Name="Id" ColumnName="Org_Unit_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Worker_Roles" TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Worker_Roles" StoreEntitySet="Worker_Roles">
+      <EndProperty Name="Worker">
+        <ScalarProperty Name="Id" ColumnName="Worker_Id" />
+      </EndProperty>
+      <EndProperty Name="Role">
+        <ScalarProperty Name="Id" ColumnName="Role_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="OrgUnits_ObjectDefs" TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.OrgUnits_ObjectDefs" StoreEntitySet="OrgUnits_ObjectDefs">
+      <EndProperty Name="Org_Unit">
+        <ScalarProperty Name="Id" ColumnName="OrgUnit_Id" />
+      </EndProperty>
+      <EndProperty Name="Object_Def">
+        <ScalarProperty Name="Id" ColumnName="ObjDef_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Role_Permissions" TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Role_Permissions" StoreEntitySet="Role_Permissions">
+      <EndProperty Name="Role">
+        <ScalarProperty Name="Id" ColumnName="Role_Id" />
+      </EndProperty>
+      <EndProperty Name="Permission">
+        <ScalarProperty Name="Id" ColumnName="Permission_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Workflow_Def_Rules" TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Workflow_Def_Rules" StoreEntitySet="Workflow_Def_Rules">
+      <EndProperty Name="Rule">
+        <ScalarProperty Name="Id" ColumnName="Rule_Id" />
+      </EndProperty>
+      <EndProperty Name="Workflow_Def">
+        <ScalarProperty Name="Id" ColumnName="Workflow_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="Object_Defs_View">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Defs_View">
+        <MappingFragment StoreEntitySet="Object_Defs_View">
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Order_Index" ColumnName="Order_Index" />
+          <ScalarProperty Name="Parent_Id" ColumnName="Parent_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Generators">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Generator">
+        <MappingFragment StoreEntitySet="Generators">
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Document_Def_Id" ColumnName="Document_Def_Id" />
+          <ScalarProperty Name="Organization_Id" ColumnName="Organization_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Doc_State_Attributes">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Doc_State_Attribute">
+        <MappingFragment StoreEntitySet="Doc_State_Attributes">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Expired" ColumnName="Expired" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Def_Id" ColumnName="Def_Id" />
+          <ScalarProperty Name="Document_Id" ColumnName="Document_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Org_Attributes">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Org_Attribute">
+        <MappingFragment StoreEntitySet="Org_Attributes">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Expired" ColumnName="Expired" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Def_Id" ColumnName="Def_Id" />
+          <ScalarProperty Name="Document_Id" ColumnName="Document_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Languages">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Language">
+        <MappingFragment StoreEntitySet="Languages">
+          <ScalarProperty Name="Culture_Name" ColumnName="Culture_Name" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Object_Def_Translations">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def_Translation">
+        <MappingFragment StoreEntitySet="Object_Def_Translations">
+          <ScalarProperty Name="Data_Text" ColumnName="Data_Text" />
+          <ScalarProperty Name="Language_Id" ColumnName="Language_Id" />
+          <ScalarProperty Name="Def_Id" ColumnName="Def_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Role_Refs">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Role_Ref">
+        <MappingFragment StoreEntitySet="Role_Refs">
+          <ScalarProperty Name="Is_Disabled" ColumnName="Is_Disabled" />
+          <ScalarProperty Name="Role_Id" ColumnName="Role_Id" />
+          <ScalarProperty Name="Def_Id" ColumnName="Def_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="Document_Visibilities" TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Visibilities" StoreEntitySet="Document_Visibilities">
+      <EndProperty Name="Organization">
+        <ScalarProperty Name="Id" ColumnName="Organization_Id" />
+      </EndProperty>
+      <EndProperty Name="Document">
+        <ScalarProperty Name="Id" ColumnName="Document_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="Document_Contents">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Document_Content">
+        <MappingFragment StoreEntitySet="Document_Contents">
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Object_Def_Attributes">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Object_Def_Attribute">
+        <MappingFragment StoreEntitySet="Object_Def_Attributes">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Expired" ColumnName="Expired" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Def_Id" ColumnName="Def_Id" />
+          <ScalarProperty Name="Document_Id" ColumnName="Document_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Compare_Operations">
+      <EntityTypeMapping TypeName="Intersoft.CISSA.DataAccessLayer.Model.Data.Compare_Operations">
+        <MappingFragment StoreEntitySet="Compare_Operations">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
